@@ -73,7 +73,6 @@ header #gnb ul li a {
 
 #slide {
   width: 100%;
-  height: calc(100vh - 350px);
   margin: 0 auto;
 }
 #slide .inner {
@@ -379,17 +378,22 @@ header #gnb ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d4d4d4;
-  opacity: 0.6;
-  border-radius: 10px;
 }
 #slide .inner .button ul a {
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #fff;
-  opacity: 1;
+  background-color: #dddddd;
+  opacity: 0.5;
+}
+
+#menu {
+  width: 100%;
+  margin: 0 auto;
+}
+#menu .inner {
+  width: 1920px;
 }
 
 /*# sourceMappingURL=style.css.map */
