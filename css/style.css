@@ -74,7 +74,7 @@ header #gnb ul li a {
 #slide {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #slide .inner {
   width: 1920px;
@@ -392,26 +392,28 @@ header #gnb ul li a {
 #menu {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 #menu .inner {
-  width: 1920px;
-  height: 800px;
+  width: 1500px;
+  height: 816px;
   position: relative;
   margin: 0 auto;
   display: flex;
 }
 #menu .inner .hanMac {
   width: 740px;
-  height: 800px;
+  height: 816px;
   background-color: #014e3a;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
+  margin-right: 20px;
 }
 #menu .inner .hanMac img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 #menu .inner .hanMac h2 {
   width: 100%;
@@ -421,7 +423,7 @@ header #gnb ul li a {
   transform: translate(-50%, -34%);
   font-family: "Pretendard-Regular";
   font-weight: 600;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1;
   color: #ba962d;
   text-align: center;
@@ -466,15 +468,17 @@ header #gnb ul li a {
   text-align: center;
 }
 #menu .inner .cs {
-  width: 358px;
-  height: 387px;
-  position: absolute;
+  width: 360px;
+  height: 398px;
+  position: relative;
   top: 0;
-  left: 40%;
+  left: 0;
+  margin-right: 20px;
 }
 #menu .inner .cs img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 #menu .inner .cs h2 {
   width: 100%;
@@ -484,7 +488,7 @@ header #gnb ul li a {
   transform: translate(-50%, -30%);
   font-family: "Pretendard-Regular";
   font-weight: 600;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -492,16 +496,104 @@ header #gnb ul li a {
 #menu .inner .cs h3 {
   width: 100%;
   position: absolute;
-  bottom: 14%;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, -14%);
+  transform: translate(-50%, -10%);
   font-family: "Pretendard-Regular";
   font-weight: 200;
   font-size: 50px;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #fff;
   text-align: left;
   padding: 0 20px;
+}
+#menu .inner .hire {
+  width: 360px;
+  height: 398px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#menu .inner .hire img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#menu .inner .hire h2 {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-family: "Pretendard-Regular";
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+#menu .inner .hire h3 {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: left;
+  padding: 0 20px;
+}
+#menu .inner .hoeGaarden {
+  width: 740px;
+  height: 398px;
+  background-color: #002066;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#menu .inner .hoeGaarden h2 {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-family: "Pretendard-Regular";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  color: #b4c6ea;
+  text-align: left;
+  padding: 0 30px;
+}
+#menu .inner .hoeGaarden p {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #b4c6ea;
+  text-align: left;
+  padding: 0 30px;
+}
+#menu .inner .hoeGaarden img:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#menu .inner .hoeGaarden img:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
