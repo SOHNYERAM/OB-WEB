@@ -6,11 +6,13 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
+// common
 @import 'common/reset.scss';
 @import 'common/footer.scss';
 @import 'common/header.scss';
+@import 'common/aside.scss';
 
+// main
 @import 'main/slide';
 @import 'main/second_con';
 @import 'main/openinno';
