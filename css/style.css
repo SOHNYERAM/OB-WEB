@@ -472,6 +472,56 @@ aside .up img {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 1180px) {
+  #slide {
+    width: 100vw;
+    height: 70vh;
+  }
+  #slide .inner {
+    width: 100%;
+    height: 100%;
+  }
+  #slide .inner .wrap ul .cass {
+    background-image: url(/img_reactive/cass_slide_other.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  #slide .inner .wrap ul .cass img {
+    display: none;
+  }
+  #slide .inner .wrap ul .ob {
+    background-image: url(/img_reactive/ob_slide_other.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  #slide .inner .wrap ul .ob img {
+    display: none;
+  }
+  #slide .inner .wrap ul .hand {
+    background-image: url(/img_reactive/hand_slide_other.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  #slide .inner .wrap ul .hand img {
+    display: none;
+  }
+  #slide .inner .wrap ul .bud {
+    background-image: url(/img_reactive/bud_slide_other.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  #slide .inner .wrap ul .bud img {
+    display: none;
+  }
+}
 #menu {
   width: 100%;
   margin: 0 auto;

@@ -104,3 +104,59 @@
 		}
 	}
 }
+@media screen and (max-width: 1180px) {
+	#slide {
+		width: 100vw;
+		height: 70vh;
+
+		.inner {
+			width: 100%;
+			height: 100%;
+
+			.wrap {
+				ul {
+					.cass {
+						img {
+							display: none;
+						}
+						background-image: url(/img_reactive/cass_slide_other.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						height: 100%;
+					}
+					.ob {
+						img {
+							display: none;
+						}
+						background-image: url(/img_reactive/ob_slide_other.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						height: 100%;
+					}
+					.hand {
+						img {
+							display: none;
+						}
+						background-image: url(/img_reactive/hand_slide_other.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						height: 100%;
+					}
+					.bud {
+						img {
+							display: none;
+						}
+						background-image: url(/img_reactive/bud_slide_other.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
