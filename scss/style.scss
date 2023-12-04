@@ -6,6 +6,9 @@
 	font-weight: 400;
 	font-style: normal;
 }
+body {
+	overflow-x: hidden;
+}
 
 // common
 @import 'common/reset.scss';

@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>OBbeer.main</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="favicon/favicon-16x16.png" size="16x16"type="image/png">
 	</head>
 	<body>
 		<header>
@@ -12,8 +13,8 @@
 				<h1>
 					<a href="index.html">
 						<img
-							src=".img/logo.png"
-							alt="맨위 가운데에 위치해 있고 파란색 오비맥주의 로고입니다."
+							src="/img/logo.png"
+							alt="상단 가운데에 위치해 있고 파란색으로 되어 있는 오비맥주의 로고입니다."
 						/>
 					</a>
 				</h1>
@@ -26,22 +27,48 @@
 				</nav>
 				<nav id="gnb">
 					<ul>
-						<li><a href="#">브랜드 맥주</a></li>
+						<li>
+							<a href="#">브랜드 맥주</a>
+							<ul class="ko">
+								<li>한국</li>
+								<li><a href="">카스</a></li>
+								<li><a href="">한맥</a></li>
+								<li><a href="">오비라거</a></li>
+								<li><a href="">필굿</a></li>
+								<li><a href="">카프리</a></li>
+								<li><a href="">레드락</a></li>
+							</ul>
+							<ul class="eu">
+								<li>유럽</li>
+							    <li><a href="">스텔라 아르투아</a></li>
+							    <li><a href="">호가든</a></li>
+							    <li><a href="">레페</a></li>
+							    <li><a href="">벡스</a></li>
+						    </ul>
+							<ul class="asia_us">
+								<li>아시아&미국</li>
+							    <li><a href="">핸드앤몰트</a></li>
+							    <li><a href="">산토리</a></li>
+							    <li><a href="">하얼빈</a></li>
+							    <li><a href="">코로나</a></li>
+							    <li><a href="">버드와이저</a></li>
+							    <li><a href="">구스 아일랜드</a></li>
+							    <li><a href="">버드 아이스</a></li>
+						    </ul>
+						</li>
+
+						
 						<li><a href="#">회사소개</a></li>
 						<li><a href="#">ESG경영</a></li>
 						<li><a href="#">고객지원</a></li>
 						<li><a href="#">인재채용</a></li>
-					</ul>
+					   
+				    </ul>
 				</nav>
-				<nav id="gnb_menu">
-					<ul class="menu">
-						<li>한국</li>
-						<li><a href="">카스</a></li>
-						<li><a href="">한맥</a></li>
-						<li><a href="">오비라거</a></li>
-						<li><a href="">필굿</a></li>
-						<li><a href="">카프리</a></li>
-						<li><a href="">레드락</a></li>
+				<a href="#" class="gnbCall">
+					<!-- 햄버거버튼만들기 -->
+					<span>메뉴호출</span>
+				</a>
 					</ul>
 				</nav>
 			</div>
@@ -53,28 +80,28 @@
 						<!-- 카스슬라이드 -->
 						<li class="cass">
 							<img
-								src=".img/cass_slide.img/cass_slide.png"
+								src="/img/cass_slide.img/cass_slide.png"
 								alt="카스맥주의 슬라이드입니다."
 							/>
 						</li>
 						<!-- 오비라거 슬라이드 -->
 						<li class="ob">
 							<img
-								src=".img/ob_lager_slide.img/OB_slide.png"
+								src="/img/ob_lager_slide.img/OB_slide.png"
 								alt="오비라거맥주의 슬라이드입니다."
 							/>
 						</li>
 						<!-- 핸드앤몰트 슬라이드  -->
 						<li class="hand">
 							<img
-								src=".img/hand_slide.img/hand_slide.png"
+								src="/img/hand_slide.img/hand_slide.png"
 								alt="핸드앤몰트맥주의 슬라이드입니다."
 							/>
 						</li>
 						<!-- 버드와이저 슬라이드 -->
 						<li class="bud">
 							<img
-								src=".img/bud_slide.img/bud_slide.png"
+								src="/img/bud_slide.img/bud_slide.png"
 								alt="버드와이저맥주의 슬라이드입니다."
 							/>
 						</li>
@@ -95,7 +122,7 @@
 			<div class="inner">
 				<article class="hanMac">
 					<img
-						src=".img/second_contents.img/hanmac_logo.png"
+						src="/img/second_contents.img/hanmac_logo.png"
 						alt="영어로 한맥이라 써있고 글씨는 흰색입니다."
 					/>
 					<h2>대한민국 대표라거 프로젝트, 한맥!</h2>
@@ -117,15 +144,15 @@
 				</article>
 				<article class="cs">
 					<img
-						src=".img/second_contents.img/고객문의.jpg"
-						alt="남성이 마이크를 차고 키보드를 치는 사진입니다."
+						src="/img/second_contents.img/고객문의.jpg"
+						alt="하얀 와이셔트를 입은 남성이 마이크를 차고 미소를 지으며 키보드를 치는 사진입니다."
 					/>
 					<h2>고객문의</h2>
 					<h3>고객이 먼저<br /><strong>우리 회사</strong></h3>
 				</article>
 				<article class="hire">
 					<img
-						src=".img/second_contents.img/채용공고2.png"
+						src="/img/second_contents.img/채용공고2.png"
 						alt="왼쪽부터 남 여 여 남 4명이 나란히 서있고 가운데 여성이 들고 있는 핸드폰을 다같이 보며 웃고  있는 사진입니다."
 					/>
 					<h2>채용공고</h2>
@@ -143,11 +170,11 @@
 						탄생한 맥주입니다.
 					</p>
 					<img
-						src=".img/second_contents.img/hogaa_bottle.png"
+						src="/img/second_contents.img/hogaa_bottle.png"
 						alt="호가든 캔맥주와 병맥주가 나란히 배치되어 있는 사진입니다."
 					/>
 					<img
-						src=".img/second_contents.img/hogaa_can.png"
+						src="/img/second_contents.img/hogaa_can.png"
 						alt="호가든 캔맥주와 병맥주가 나란히 배치되어 있는 사진입니다."
 					/>
 				</article>
@@ -163,15 +190,10 @@
 						누구나 참여할 수 있는 오픈이노베이션을 통해 <br />다양한 아이디어를
 						발굴하는 열린 혁신을 추구합니다.
 					</p>
-					<div>
+					<button type="button">
 						<a href="오픈이노베이션페이지">참여하러 가기</a>
-					</div>
+					</button>
 				</div>
-
-				<img
-					src=".img/open_innovation.img/오픈이노베니션_person.png"
-					alt="베레모를 쓴 남자아이가 확성기를 입에 대고 있는 사진입니다."
-				/>
 			</div>
 		</section>
 		<!-- 하단 컨텐츠 영역 -->
@@ -180,7 +202,7 @@
 				<article>
 					<div class="pic">
 						<img
-							src=".img/bottom_contents.img/history.png"
+							src="/img/bottom_contents.img/history.png"
 							alt="오비맥주의 최초캔맥주 사진입니다."
 						/>
 					</div>
@@ -196,7 +218,7 @@
 				<article>
 					<div class="pic1">
 						<img
-							src=".img/bottom_contents.img/ESG경영.png"
+							src="/img/bottom_contents.img/ESG경영.png"
 							alt="많은 사람들이 손을 모으고 있는 사진입니다."
 						/>
 					</div>
@@ -218,7 +240,7 @@
 				<h2>
 					<a href="index.html">
 						<img
-							src=".img/logo.png"
+							src="/img/logo.png"
 							alt="왼쪽 하단에 위치해 있고 파란색 오비맥주의 로고 입니다."
 						/>
 					</a>
@@ -243,42 +265,43 @@
 					<option value="">버드와이저</option>
 				</select>
 			</div>
-		</footer>
-		<aside>
 			<div class="sns">
 				<ul>
 					<a href="페이스북페이지"
 						><img
-							src=".img/aside.img/facebook.png"
+							src="/img/sns.img/facebook.png"
 							alt="오비맥주 페이스북에 접속 할 수 있는 페이스북아이콘입니다."
 					/></a>
 				</ul>
 				<ul>
 					<a href="인스타그램페이지"
 						><img
-							src=".img/aside.img/insta.png"
+							src="/img/sns.img/instagram.png"
 							alt="오비맥주 인스타그램에 접속 할 수 있는 인스타그램 아이콘입니다."
 					/></a>
 				</ul>
 				<ul>
 					<a href="링크드인"
 						><img
-							src=".img/aside.img/linkedin.png"
+							src="/img/sns.img/linkedin.png"
 							alt="오비맥주 링크드인에 접속 할 수 있는 링크드인 아이콘입니다."
 					/></a>
 				</ul>
 				<ul>
 					<a href="네이버블로그"
 						><img
-							src=".img/aside.img/naver.png"
+							src="/img/sns.img/naver.png"
 							alt="오비맥주 네이버블로그에 접속 할 수 있는 네이버블로그 아이콘 입니다"
 					/></a>
 				</ul>
 			</div>
+		</footer>
+		<aside>
+			
 			<div class="up">
 				<button>
 					<img
-						src=".img/aside.img/top_button.png"
+						src="/img/aside.img/top_button.png"
 						alt="페이지 맨 위로 올라갈 수 있는 버튼입니다."
 					/>
 				</button>
