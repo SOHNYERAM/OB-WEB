@@ -7,6 +7,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: rgb(253, 252, 249);
 }
 
 * {
@@ -349,24 +350,25 @@ header .gnbCall.on span {
   }
 }
 aside {
-  width: 1500px;
-  position: absolute;
-  top: 70%;
-  right: 8%;
-  transform: translate(-8%, -70%);
-}
-aside .up {
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  right: 0%;
-}
-aside .up button img {
-  position: absolute;
-  top: 420%;
-  right: 0%;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+aside .up {
+  width: 1920px;
+  height: 100%;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+aside .up img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 60%;
+  right: -120px;
+  transform: translateY(-60%);
 }
 
 #slide {
@@ -780,6 +782,11 @@ aside .up button img {
   left: 210px;
   bottom: 120px;
 }
+#banner .inner .txt button:hover {
+  transition: 0.5s;
+  background-color: #fff;
+  -webkit-text-fill-color: #00392a;
+}
 #banner .inner .txt button a {
   display: block;
   width: 100%;
@@ -868,6 +875,17 @@ aside .up button img {
   bottom: 12%;
   left: 50%;
   transform: translate(-50%, -12%);
+}
+#aboutOB .inner article:nth-of-type(1) a:hover {
+  transition: 0.5s;
+  border: 2px solid #fff;
+}
+#aboutOB .inner article:nth-of-type(1) a span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Pretendard-Regular";
   font-weight: 300;
   font-size: 35px;
@@ -935,6 +953,17 @@ aside .up button img {
   bottom: 12%;
   left: 50%;
   transform: translate(-50%, -12%);
+}
+#aboutOB .inner article:nth-of-type(2) a:hover {
+  transition: 0.5s;
+  border: 2px solid #fff;
+}
+#aboutOB .inner article:nth-of-type(2) a span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Pretendard-Regular";
   font-weight: 300;
   font-size: 35px;
