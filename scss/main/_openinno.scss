@@ -82,6 +82,63 @@
 				}
 			}
 		}
-		background-image: url(/img/open_innovation.img/오픈이노베니션_person.png);
+		background-image: url(../img/open_innovation/오픈이노베니션_person.png);
+	}
+}
+@media screen and (max-width: 900px) {
+	#banner {
+		margin-bottom: 10px;
+
+		.inner {
+			width: 100%;
+
+			position: relative;
+			top: 80%;
+			left: 0;
+
+			.txt {
+				width: 100%;
+				height: 100%;
+				p:nth-of-type(1) {
+					padding-top: 100px;
+					padding-left: 50px;
+					letter-spacing: 2px;
+				}
+				h3 {
+					padding-top: 40px;
+
+					padding-left: 50px;
+					letter-spacing: 2px;
+					// 줄바꿈을 하고 싶은데 가능한지 여쭤보기
+				}
+
+				p:nth-of-type(2) {
+					display: none;
+				}
+				button {
+					width: 500px;
+					height: 100px;
+					background-color: #00392a;
+					border-radius: 50px;
+					position: absolute;
+					left: 50%;
+					bottom: 10%;
+					transform: translateX(-50%);
+
+					&:hover {
+						transition: none;
+						background-color: #fff;
+						-webkit-text-fill-color: #00392a;
+					}
+					a {
+						font-size: 40px;
+					}
+				}
+			}
+			background-image: url(../img_tablet/open_person_tablet.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
 	}
 }

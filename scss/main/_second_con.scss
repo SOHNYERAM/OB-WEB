@@ -253,3 +253,96 @@
 		}
 	}
 }
+@media screen and (max-width: 900px) {
+	#menu {
+		width: 100vw;
+		height: 100vh;
+		padding: 0;
+		.inner {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.hanMac {
+				width: 100%;
+				height: 70vh;
+				margin-right: none;
+				margin-bottom: 10px;
+				&:hover {
+					transition: none;
+					box-shadow: none;
+					cursor: none;
+				}
+			}
+			.cs {
+				width: 100%;
+				height: 40vh;
+				margin-right: none;
+				margin-bottom: 10px;
+				&:hover {
+					transition: none;
+					box-shadow: none;
+					cursor: none;
+				}
+				h2 {
+					font-size: 60px;
+					letter-spacing: 3px;
+					position: absolute;
+					top: 20%;
+					left: 50%;
+					transform: translate(-50%, -20%);
+				}
+
+				h3 {
+					font-size: 50px;
+					letter-spacing: 3px;
+					position: absolute;
+					bottom: 15%;
+					left: 40%;
+					transform: translate(-40%, -15%);
+					padding: 0 50px;
+				}
+			}
+			.hire {
+				width: 100%;
+				height: vh;
+				position: relative;
+				top: 0;
+				left: 0;
+				margin-bottom: 10px;
+				&:hover {
+					transition: none;
+					box-shadow: none;
+					cursor: none;
+				}
+				h2 {
+					font-size: 60px;
+					letter-spacing: 3px;
+					position: absolute;
+					top: 20%;
+					left: 50%;
+					transform: translate(-50%, -20%);
+				}
+				h3 {
+					font-size: 50px;
+					letter-spacing: 3px;
+					position: absolute;
+					bottom: 15%;
+					left: 40%;
+					transform: translate(-40%, -15%);
+					padding: 0 80px;
+				}
+			}
+			.hoeGaarden {
+				width: 100%;
+				height: 30vh;
+				background-color: #002066;
+				position: relative;
+				top: 0;
+				left: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

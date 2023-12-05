@@ -176,3 +176,52 @@
 		}
 	}
 }
+@media screen and (max-width: 900px) {
+	#aboutOB {
+		width: 100vw;
+		// height: 100vh;
+		margin: 0;
+		position: relative;
+		top: 50%;
+
+		.inner {
+			width: 100%;
+			flex-direction: column;
+			// height: 50%;
+
+			article:nth-of-type(1) {
+				width: 100%;
+				height: 100%;
+				margin-right: 0px;
+
+				.pic {
+					img {
+						margin: 0;
+					}
+				}
+
+				a {
+					&:hover {
+						transition: none;
+						border: none;
+					}
+				}
+			}
+			article:nth-of-type(2) {
+				width: 100%;
+				height: 100%;
+				.pic1 {
+				}
+				img {
+					margin: 0;
+				}
+				a {
+					&:hover {
+						transition: none;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}

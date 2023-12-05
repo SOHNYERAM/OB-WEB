@@ -332,7 +332,7 @@ header .gnbCall.on span {
   opacity: 0;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 900px) {
   header .inner {
     width: 100%;
     height: 200px;
@@ -472,17 +472,18 @@ aside .up img {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 900px) {
   #slide {
     width: 100vw;
     height: 70vh;
+    margin-bottom: 10px;
   }
   #slide .inner {
     width: 100%;
     height: 100%;
   }
   #slide .inner .wrap ul .cass {
-    background-image: url(/img_reactive/cass_slide_other.png);
+    background-image: url(../img_tablet/cass_slide_other.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -492,7 +493,7 @@ aside .up img {
     display: none;
   }
   #slide .inner .wrap ul .ob {
-    background-image: url(/img_reactive/ob_slide_other.png);
+    background-image: url(../img_tablet/ob_slide_other.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -502,7 +503,7 @@ aside .up img {
     display: none;
   }
   #slide .inner .wrap ul .hand {
-    background-image: url(/img_reactive/hand_slide_other.png);
+    background-image: url(../img_tablet/hand_slide_other.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -512,7 +513,7 @@ aside .up img {
     display: none;
   }
   #slide .inner .wrap ul .bud {
-    background-image: url(/img_reactive/bud_slide_other.png);
+    background-image: url(../img_tablet/bud_slide_other.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -766,6 +767,97 @@ aside .up img {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 900px) {
+  #menu {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+  #menu .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #menu .inner .hanMac {
+    width: 100%;
+    height: 70vh;
+    margin-right: none;
+    margin-bottom: 10px;
+  }
+  #menu .inner .hanMac:hover {
+    transition: none;
+    box-shadow: none;
+    cursor: none;
+  }
+  #menu .inner .cs {
+    width: 100%;
+    height: 40vh;
+    margin-right: none;
+    margin-bottom: 10px;
+  }
+  #menu .inner .cs:hover {
+    transition: none;
+    box-shadow: none;
+    cursor: none;
+  }
+  #menu .inner .cs h2 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+  #menu .inner .cs h3 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    transform: translate(-40%, -15%);
+    padding: 0 50px;
+  }
+  #menu .inner .hire {
+    width: 100%;
+    height: vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+  }
+  #menu .inner .hire:hover {
+    transition: none;
+    box-shadow: none;
+    cursor: none;
+  }
+  #menu .inner .hire h2 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+  #menu .inner .hire h3 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    transform: translate(-40%, -15%);
+    padding: 0 80px;
+  }
+  #menu .inner .hoeGaarden {
+    width: 100%;
+    height: 30vh;
+    background-color: #002066;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+  }
+}
 #banner {
   width: 100%;
   margin: 0 auto;
@@ -778,7 +870,7 @@ aside .up img {
   position: relative;
   margin: 0 auto;
   background-color: #000;
-  background-image: url(/img/open_innovation.img/오픈이노베니션_person.png);
+  background-image: url(../img/open_innovation/오픈이노베니션_person.png);
 }
 #banner .inner .txt {
   width: 100%;
@@ -850,6 +942,56 @@ aside .up img {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 900px) {
+  #banner {
+    margin-bottom: 10px;
+  }
+  #banner .inner {
+    width: 100%;
+    position: relative;
+    top: 80%;
+    left: 0;
+    background-image: url(../img_tablet/open_person_tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #banner .inner .txt {
+    width: 100%;
+    height: 100%;
+  }
+  #banner .inner .txt p:nth-of-type(1) {
+    padding-top: 100px;
+    padding-left: 50px;
+    letter-spacing: 2px;
+  }
+  #banner .inner .txt h3 {
+    padding-top: 40px;
+    padding-left: 50px;
+    letter-spacing: 2px;
+  }
+  #banner .inner .txt p:nth-of-type(2) {
+    display: none;
+  }
+  #banner .inner .txt button {
+    width: 500px;
+    height: 100px;
+    background-color: #00392a;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+  }
+  #banner .inner .txt button:hover {
+    transition: none;
+    background-color: #fff;
+    -webkit-text-fill-color: #00392a;
+  }
+  #banner .inner .txt button a {
+    font-size: 40px;
+  }
+}
 #aboutOB {
   width: 100%;
   margin: 0 auto;
@@ -1020,6 +1162,42 @@ aside .up img {
   text-align: center;
   line-height: 90px;
   color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  #aboutOB {
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    top: 50%;
+  }
+  #aboutOB .inner {
+    width: 100%;
+    flex-direction: column;
+  }
+  #aboutOB .inner article:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+  }
+  #aboutOB .inner article:nth-of-type(1) .pic img {
+    margin: 0;
+  }
+  #aboutOB .inner article:nth-of-type(1) a:hover {
+    transition: none;
+    border: none;
+  }
+  #aboutOB .inner article:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+  }
+  #aboutOB .inner article:nth-of-type(2) img {
+    margin: 0;
+  }
+  #aboutOB .inner article:nth-of-type(2) a:hover {
+    transition: none;
+    border: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
