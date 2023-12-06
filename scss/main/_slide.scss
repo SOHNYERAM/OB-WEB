@@ -104,10 +104,11 @@
 		}
 	}
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
 	#slide {
 		width: 100vw;
 		height: 70vh;
+		overflow: auto;
 		margin-bottom: 10px;
 
 		.inner {

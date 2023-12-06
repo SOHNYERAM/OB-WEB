@@ -2,7 +2,7 @@
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	overflow: hidden;
+	position: relative;
 	.inner {
 		width: 1920px;
 		height: 627px;
@@ -85,16 +85,12 @@
 		background-image: url(../img/open_innovation/오픈이노베니션_person.png);
 	}
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
 	#banner {
 		margin-bottom: 10px;
 
 		.inner {
 			width: 100%;
-
-			position: relative;
-			top: 80%;
-			left: 0;
 
 			.txt {
 				width: 100%;
@@ -109,7 +105,7 @@
 
 					padding-left: 50px;
 					letter-spacing: 2px;
-					// 줄바꿈을 하고 싶은데 가능한지 여쭤보기
+					// 줄바꿈 가능한지 여쭤보기
 				}
 
 				p:nth-of-type(2) {

@@ -5,11 +5,6 @@
   font-weight: 400;
   font-style: normal;
 }
-body {
-  overflow-x: hidden;
-  background-color: rgb(253, 252, 249);
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -29,6 +24,11 @@ a {
 button {
   border: none;
   background: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(253, 252, 249);
 }
 
 footer {
@@ -256,31 +256,32 @@ header .inner .util ul li a {
   font-weight: 300;
   color: #000;
 }
-header #gnb {
+header .inner #gnb {
   position: absolute;
   width: 100%;
   bottom: 30px;
 }
-header #gnb ul {
+header .inner #gnb ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-header #gnb ul li a {
+header .inner #gnb ul li a {
   font-size: 26px;
   font-family: Pretendard-Regular;
   font-weight: 600;
   color: #000;
 }
-header .gnbCall {
+header .inner .gnbCall {
   position: absolute;
   top: 45%;
   right: 10%;
   transform: translateY(-45%);
+  display: none;
   width: 40px;
   height: 40px;
 }
-header .gnbCall::before {
+header .inner .gnbCall::before {
   content: "";
   display: block;
   width: 100%;
@@ -292,7 +293,7 @@ header .gnbCall::before {
   left: 0;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
-header .gnbCall::after {
+header .inner .gnbCall::after {
   content: "";
   display: block;
   width: 100%;
@@ -304,7 +305,7 @@ header .gnbCall::after {
   left: 0;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
-header .gnbCall span {
+header .inner .gnbCall span {
   display: block;
   width: 100%;
   height: 6px;
@@ -317,25 +318,68 @@ header .gnbCall span {
   margin-top: -1px;
   text-indent: -99999px;
 }
-header .gnbCall.on::before {
+header .inner .gnbCall.on::before {
   top: 50%;
   margin-top: -1px;
   transform: rotate(45deg);
 }
-header .gnbCall.on::after {
+header .inner .gnbCall.on::after {
   bottom: 50%;
   margin-bottom: -1px;
   transform: rotate(-45deg);
 }
-header .gnbCall.on span {
+header .inner .gnbCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
+header .inner .moTitle {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  z-index: 10;
+  padding: 40px 40px;
+  background-color: #fff;
+  border: 2px solid #144192;
+  transition: all 0.5s;
+  display: none;
+}
+header .inner .moTitle.on {
+  left: 0px;
+}
+header .inner .moTitle h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .inner .moTitle h2 a img {
+  width: 250px;
+}
+header .inner .moTitle #gnbMo {
+  transition: 0.5s;
+}
+header .inner .moTitle #gnbMo li a {
+  display: block;
+  font-family: "Pretendard-Regular";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #144192;
+  text-align: center;
+  padding: 20px 0px;
+  text-align: center;
+}
+header .inner .moTitle #gnbMo li a:hover {
+  border-bottom: 3px solid #144192;
+}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
+  header {
+    overflow: auto;
+  }
   header .inner {
     width: 100%;
-    height: 200px;
+    height: 20vh;
   }
   header .inner h1 a img {
     top: 50%;
@@ -345,8 +389,17 @@ header .gnbCall.on span {
   header .inner .util {
     display: none;
   }
-  header #gnb {
+  header .inner #gnb {
     display: none;
+  }
+  header .inner .gnbCall {
+    display: block;
+  }
+  header .inner .moTitle {
+    display: block;
+  }
+  header .inner #gnbMo {
+    display: block;
   }
 }
 aside {
@@ -472,10 +525,11 @@ aside .up img {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
   #slide {
     width: 100vw;
     height: 70vh;
+    overflow: auto;
     margin-bottom: 10px;
   }
   #slide .inner {
@@ -534,27 +588,33 @@ aside .up img {
   height: 816px;
   position: relative;
   margin: 0 auto;
+}
+#menu .inner .wrap {
+  width: 100%;
+  height: 100%;
   display: flex;
 }
-#menu .inner .hanMac {
+#menu .inner .wrap .one {
   width: 740px;
-  height: 816px;
-  background-color: #014e3a;
+  height: 100%;
   position: relative;
-  top: 0;
-  left: 0;
   margin-right: 20px;
 }
-#menu .inner .hanMac:hover {
+#menu .inner .wrap .one .hanMac {
+  width: 100%;
+  height: 100%;
+  background-color: #014e3a;
+}
+#menu .inner .wrap .one .hanMac:hover {
   transition: all 0.3s;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-#menu .inner .hanMac img {
+#menu .inner .wrap .one .hanMac img {
   width: 100%;
   height: 100%;
 }
-#menu .inner .hanMac h2 {
+#menu .inner .wrap .one .hanMac h2 {
   width: 100%;
   position: absolute;
   top: 34%;
@@ -567,7 +627,7 @@ aside .up img {
   color: #ba962d;
   text-align: center;
 }
-#menu .inner .hanMac p:nth-of-type(1) {
+#menu .inner .wrap .one .hanMac p:nth-of-type(1) {
   width: 100%;
   position: absolute;
   top: 52%;
@@ -580,7 +640,7 @@ aside .up img {
   color: #fff;
   text-align: center;
 }
-#menu .inner .hanMac p:nth-of-type(2) {
+#menu .inner .wrap .one .hanMac p:nth-of-type(2) {
   width: 100%;
   position: absolute;
   bottom: 23%;
@@ -593,7 +653,7 @@ aside .up img {
   color: #ba962d;
   text-align: center;
 }
-#menu .inner .hanMac p:nth-of-type(3) {
+#menu .inner .wrap .one .hanMac p:nth-of-type(3) {
   width: 100%;
   position: absolute;
   bottom: 10%;
@@ -606,7 +666,13 @@ aside .up img {
   color: #b3ae7a;
   text-align: center;
 }
-#menu .inner .cs {
+#menu .inner .wrap .two {
+  width: 740px;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+#menu .inner .wrap .two .cs {
   width: 360px;
   height: 398px;
   position: relative;
@@ -614,12 +680,12 @@ aside .up img {
   left: 0;
   margin-right: 20px;
 }
-#menu .inner .cs:hover {
+#menu .inner .wrap .two .cs:hover {
   transition: all 0.3s;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-#menu .inner .cs::before {
+#menu .inner .wrap .two .cs::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -628,11 +694,11 @@ aside .up img {
   top: 0;
   left: 0;
 }
-#menu .inner .cs img {
+#menu .inner .wrap .two .cs img {
   width: 100%;
   height: 100%;
 }
-#menu .inner .cs h2 {
+#menu .inner .wrap .two .cs h2 {
   width: 100%;
   position: absolute;
   top: 30%;
@@ -645,7 +711,7 @@ aside .up img {
   color: #fff;
   text-align: center;
 }
-#menu .inner .cs h3 {
+#menu .inner .wrap .two .cs h3 {
   width: 100%;
   position: absolute;
   bottom: 10%;
@@ -659,19 +725,19 @@ aside .up img {
   text-align: left;
   padding: 0 20px;
 }
-#menu .inner .hire {
+#menu .inner .wrap .two .hire {
   width: 360px;
   height: 398px;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
 }
-#menu .inner .hire:hover {
+#menu .inner .wrap .two .hire:hover {
   transition: all 0.3s;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-#menu .inner .hire::before {
+#menu .inner .wrap .two .hire::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -680,12 +746,12 @@ aside .up img {
   top: 0;
   left: 0;
 }
-#menu .inner .hire img {
+#menu .inner .wrap .two .hire img {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-#menu .inner .hire h2 {
+#menu .inner .wrap .two .hire h2 {
   width: 100%;
   position: absolute;
   top: 30%;
@@ -698,7 +764,7 @@ aside .up img {
   color: #fff;
   text-align: center;
 }
-#menu .inner .hire h3 {
+#menu .inner .wrap .two .hire h3 {
   width: 100%;
   position: absolute;
   bottom: 10%;
@@ -712,7 +778,7 @@ aside .up img {
   text-align: left;
   padding: 0 20px;
 }
-#menu .inner .hoeGaarden {
+#menu .inner .wrap .two .hoeGaarden {
   width: 740px;
   height: 398px;
   background-color: #002066;
@@ -720,12 +786,12 @@ aside .up img {
   bottom: 0;
   right: 0;
 }
-#menu .inner .hoeGaarden:hover {
+#menu .inner .wrap .two .hoeGaarden:hover {
   transition: all 0.3s;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-#menu .inner .hoeGaarden h2 {
+#menu .inner .wrap .two .hoeGaarden h2 {
   width: 100%;
   position: absolute;
   top: 20%;
@@ -739,7 +805,7 @@ aside .up img {
   text-align: left;
   padding: 0 30px;
 }
-#menu .inner .hoeGaarden p {
+#menu .inner .wrap .two .hoeGaarden p {
   width: 100%;
   position: absolute;
   bottom: 20%;
@@ -752,12 +818,12 @@ aside .up img {
   text-align: left;
   padding: 0 30px;
 }
-#menu .inner .hoeGaarden img:nth-of-type(1) {
+#menu .inner .wrap .two .hoeGaarden img:nth-of-type(1) {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#menu .inner .hoeGaarden img:nth-of-type(2) {
+#menu .inner .wrap .two .hoeGaarden img:nth-of-type(2) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -767,7 +833,7 @@ aside .up img {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
   #menu {
     width: 100vw;
     height: 100vh;
@@ -776,32 +842,36 @@ aside .up img {
   #menu .inner {
     width: 100%;
     height: 100%;
-    display: flex;
+  }
+  #menu .inner .wrap {
     flex-direction: column;
   }
-  #menu .inner .hanMac {
+  #menu .inner .wrap .one {
     width: 100%;
-    height: 70vh;
+  }
+  #menu .inner .wrap .one .hanMac {
     margin-right: none;
     margin-bottom: 10px;
   }
-  #menu .inner .hanMac:hover {
+  #menu .inner .wrap .one .hanMac:hover {
     transition: none;
     box-shadow: none;
-    cursor: none;
   }
-  #menu .inner .cs {
+  #menu .inner .wrap .two {
     width: 100%;
-    height: 40vh;
+    flex-direction: column;
+  }
+  #menu .inner .wrap .two .cs {
+    width: 100%;
+    height: 100%;
     margin-right: none;
     margin-bottom: 10px;
   }
-  #menu .inner .cs:hover {
+  #menu .inner .wrap .two .cs:hover {
     transition: none;
     box-shadow: none;
-    cursor: none;
   }
-  #menu .inner .cs h2 {
+  #menu .inner .wrap .two .cs h2 {
     font-size: 60px;
     letter-spacing: 3px;
     position: absolute;
@@ -809,7 +879,7 @@ aside .up img {
     left: 50%;
     transform: translate(-50%, -20%);
   }
-  #menu .inner .cs h3 {
+  #menu .inner .wrap .two .cs h3 {
     font-size: 50px;
     letter-spacing: 3px;
     position: absolute;
@@ -818,20 +888,16 @@ aside .up img {
     transform: translate(-40%, -15%);
     padding: 0 50px;
   }
-  #menu .inner .hire {
+  #menu .inner .wrap .two .hire {
     width: 100%;
-    height: vh;
-    position: relative;
-    top: 0;
-    left: 0;
+    height: 100%;
     margin-bottom: 10px;
   }
-  #menu .inner .hire:hover {
+  #menu .inner .wrap .two .hire:hover {
     transition: none;
     box-shadow: none;
-    cursor: none;
   }
-  #menu .inner .hire h2 {
+  #menu .inner .wrap .two .hire h2 {
     font-size: 60px;
     letter-spacing: 3px;
     position: absolute;
@@ -839,7 +905,7 @@ aside .up img {
     left: 50%;
     transform: translate(-50%, -20%);
   }
-  #menu .inner .hire h3 {
+  #menu .inner .wrap .two .hire h3 {
     font-size: 50px;
     letter-spacing: 3px;
     position: absolute;
@@ -848,21 +914,27 @@ aside .up img {
     transform: translate(-40%, -15%);
     padding: 0 80px;
   }
-  #menu .inner .hoeGaarden {
+  #menu .inner .wrap .two .hoeGaarden {
     width: 100%;
-    height: 30vh;
-    background-color: #002066;
+    height: 40%;
     position: relative;
     top: 0;
     left: 0;
     margin-bottom: 10px;
+  }
+  #menu .inner .wrap .two .hoeGaarden:hover {
+    transition: none;
+    box-shadow: none;
+  }
+  #menu .inner .wrap .two .hoeGaarden p {
+    font-size: 17px;
   }
 }
 #banner {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
-  overflow: hidden;
+  position: relative;
 }
 #banner .inner {
   width: 1920px;
@@ -942,15 +1014,12 @@ aside .up img {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
   #banner {
     margin-bottom: 10px;
   }
   #banner .inner {
     width: 100%;
-    position: relative;
-    top: 80%;
-    left: 0;
     background-image: url(../img_tablet/open_person_tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1164,7 +1233,7 @@ aside .up img {
   color: #fff;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
   #aboutOB {
     width: 100vw;
     margin: 0;
