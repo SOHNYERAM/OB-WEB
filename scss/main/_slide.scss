@@ -104,11 +104,10 @@
 		}
 	}
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 874px) {
 	#slide {
 		width: 100vw;
-		height: 70vh;
-		overflow: auto;
+		height: 50vh;
 		margin-bottom: 10px;
 
 		.inner {
@@ -121,7 +120,7 @@
 						img {
 							display: none;
 						}
-						background-image: url(../img_tablet/cass_slide_other.png);
+						background-image: url(../img_tablet/cass_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -131,7 +130,7 @@
 						img {
 							display: none;
 						}
-						background-image: url(../img_tablet/ob_slide_other.png);
+						background-image: url(../img_tablet/ob_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -141,7 +140,7 @@
 						img {
 							display: none;
 						}
-						background-image: url(../img_tablet/hand_slide_other.png);
+						background-image: url(../img_tablet/hand_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -151,7 +150,7 @@
 						img {
 							display: none;
 						}
-						background-image: url(../img_tablet/bud_slide_other.png);
+						background-image: url(../img_tablet/bud_slide.png);
 
 						background-repeat: no-repeat;
 						background-position: center;

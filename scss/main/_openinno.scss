@@ -36,7 +36,6 @@
 				color: #fff;
 				text-align: left;
 				padding-top: 40px;
-
 				padding-left: 210px;
 				letter-spacing: 2px;
 			}
@@ -85,7 +84,7 @@
 		background-image: url(../img/open_innovation/오픈이노베니션_person.png);
 	}
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 874px) {
 	#banner {
 		margin-bottom: 10px;
 
@@ -96,14 +95,15 @@
 				width: 100%;
 				height: 100%;
 				p:nth-of-type(1) {
-					padding-top: 100px;
-					padding-left: 50px;
+					font-size: 4vw;
+					padding-top: 13vh;
+					padding-left: 10vw;
 					letter-spacing: 2px;
 				}
 				h3 {
-					padding-top: 40px;
-
-					padding-left: 50px;
+					font-size: 6vw;
+					padding-top: 12vh;
+					padding: 3vh 9vw;
 					letter-spacing: 2px;
 					// 줄바꿈 가능한지 여쭤보기
 				}
@@ -112,10 +112,8 @@
 					display: none;
 				}
 				button {
-					width: 500px;
-					height: 100px;
-					background-color: #00392a;
-					border-radius: 50px;
+					width: 50vw;
+					height: 10vw;
 					position: absolute;
 					left: 50%;
 					bottom: 10%;
@@ -127,7 +125,7 @@
 						-webkit-text-fill-color: #00392a;
 					}
 					a {
-						font-size: 40px;
+						font-size: 4vw;
 					}
 				}
 			}

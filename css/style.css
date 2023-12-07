@@ -221,6 +221,108 @@ footer .sns ul a img {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 874px) {
+  footer {
+    width: 100vh;
+  }
+  footer .inner {
+    width: 100%;
+  }
+  footer .inner h2 {
+    width: 100%;
+  }
+  footer .inner h2 a {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    transform: translate(4%, -20%);
+  }
+  footer .inner h2 a img {
+    width: 80%;
+    height: 80%;
+  }
+  footer .inner div ul {
+    width: 100%;
+    gap: 20px;
+    position: absolute;
+    top: 40%;
+    left: 4%;
+  }
+  footer .inner div ul li:nth-of-type(1) a {
+    font-size: 2vw;
+  }
+  footer .inner div ul li:nth-of-type(2) a {
+    font-size: 2vw;
+  }
+  footer .inner div ul li:nth-of-type(3) a {
+    font-size: 2vw;
+  }
+  footer .inner div address {
+    position: absolute;
+    bottom: 30%;
+    left: 4%;
+    font-size: 2vw;
+  }
+  footer .inner div p {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 18%;
+    left: 4%;
+    font-size: 2vw;
+  }
+  footer .inner select {
+    width: 30vw;
+    height: 5vh;
+    font-size: 3vw;
+    position: absolute;
+    top: 35%;
+    right: 12%;
+    transform: translateY(-35%);
+  }
+  footer .inner select option:nth-of-type(1) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(2) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(3) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(4) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(5) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(6) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(7) {
+    font-size: 3vw;
+  }
+  footer .inner select option:nth-of-type(8) {
+    font-size: 3vw;
+  }
+  footer .sns {
+    position: absolute;
+    bottom: 25%;
+    left: 62%;
+    transform: translateY(-25%);
+  }
+  footer .sns ul {
+    width: 100%;
+    height: 100%;
+  }
+  footer .sns ul a {
+    display: block;
+  }
+  footer .sns ul a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
 header {
   width: 100%;
   overflow: hidden;
@@ -525,11 +627,10 @@ aside .up img {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 874px) {
   #slide {
     width: 100vw;
-    height: 70vh;
-    overflow: auto;
+    height: 50vh;
     margin-bottom: 10px;
   }
   #slide .inner {
@@ -537,7 +638,7 @@ aside .up img {
     height: 100%;
   }
   #slide .inner .wrap ul .cass {
-    background-image: url(../img_tablet/cass_slide_other.png);
+    background-image: url(../img_tablet/cass_slide.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -547,7 +648,7 @@ aside .up img {
     display: none;
   }
   #slide .inner .wrap ul .ob {
-    background-image: url(../img_tablet/ob_slide_other.png);
+    background-image: url(../img_tablet/ob_slide.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -557,7 +658,7 @@ aside .up img {
     display: none;
   }
   #slide .inner .wrap ul .hand {
-    background-image: url(../img_tablet/hand_slide_other.png);
+    background-image: url(../img_tablet/hand_slide.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -567,7 +668,7 @@ aside .up img {
     display: none;
   }
   #slide .inner .wrap ul .bud {
-    background-image: url(../img_tablet/bud_slide_other.png);
+    background-image: url(../img_tablet/bud_slide.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -833,11 +934,11 @@ aside .up img {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 874px) {
   #menu {
     width: 100vw;
-    height: 100vh;
     padding: 0;
+    margin-bottom: 10px;
   }
   #menu .inner {
     width: 100%;
@@ -857,6 +958,24 @@ aside .up img {
     transition: none;
     box-shadow: none;
   }
+  #menu .inner .wrap .one .hanMac h2 {
+    font-size: 6vw;
+  }
+  #menu .inner .wrap .one .hanMac p:nth-of-type(1) {
+    position: absolute;
+    top: 50%;
+    font-size: 3vw;
+  }
+  #menu .inner .wrap .one .hanMac p:nth-of-type(2) {
+    position: absolute;
+    bottom: 30%;
+    font-size: 3vw;
+  }
+  #menu .inner .wrap .one .hanMac p:nth-of-type(3) {
+    position: absolute;
+    bottom: 20%;
+    font-size: 3vw;
+  }
   #menu .inner .wrap .two {
     width: 100%;
     flex-direction: column;
@@ -872,7 +991,7 @@ aside .up img {
     box-shadow: none;
   }
   #menu .inner .wrap .two .cs h2 {
-    font-size: 60px;
+    font-size: 10vw;
     letter-spacing: 3px;
     position: absolute;
     top: 20%;
@@ -880,12 +999,12 @@ aside .up img {
     transform: translate(-50%, -20%);
   }
   #menu .inner .wrap .two .cs h3 {
-    font-size: 50px;
+    font-size: 7vw;
     letter-spacing: 3px;
     position: absolute;
-    bottom: 15%;
-    left: 40%;
-    transform: translate(-40%, -15%);
+    bottom: 12%;
+    left: 45%;
+    transform: translate(-40%, -12%);
     padding: 0 50px;
   }
   #menu .inner .wrap .two .hire {
@@ -898,7 +1017,7 @@ aside .up img {
     box-shadow: none;
   }
   #menu .inner .wrap .two .hire h2 {
-    font-size: 60px;
+    font-size: 10vw;
     letter-spacing: 3px;
     position: absolute;
     top: 20%;
@@ -906,28 +1025,27 @@ aside .up img {
     transform: translate(-50%, -20%);
   }
   #menu .inner .wrap .two .hire h3 {
-    font-size: 50px;
+    font-size: 7vw;
     letter-spacing: 3px;
     position: absolute;
-    bottom: 15%;
-    left: 40%;
-    transform: translate(-40%, -15%);
+    bottom: 12%;
+    left: 45%;
+    transform: translate(-40%, -12%);
     padding: 0 80px;
   }
   #menu .inner .wrap .two .hoeGaarden {
     width: 100%;
-    height: 40%;
+    height: 100%;
     position: relative;
     top: 0;
     left: 0;
-    margin-bottom: 10px;
   }
   #menu .inner .wrap .two .hoeGaarden:hover {
     transition: none;
     box-shadow: none;
   }
   #menu .inner .wrap .two .hoeGaarden p {
-    font-size: 17px;
+    font-size: 2vw;
   }
 }
 #banner {
@@ -1014,7 +1132,7 @@ aside .up img {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 874px) {
   #banner {
     margin-bottom: 10px;
   }
@@ -1030,23 +1148,23 @@ aside .up img {
     height: 100%;
   }
   #banner .inner .txt p:nth-of-type(1) {
-    padding-top: 100px;
-    padding-left: 50px;
+    font-size: 4vw;
+    padding-top: 13vh;
+    padding-left: 10vw;
     letter-spacing: 2px;
   }
   #banner .inner .txt h3 {
-    padding-top: 40px;
-    padding-left: 50px;
+    font-size: 6vw;
+    padding-top: 12vh;
+    padding: 3vh 9vw;
     letter-spacing: 2px;
   }
   #banner .inner .txt p:nth-of-type(2) {
     display: none;
   }
   #banner .inner .txt button {
-    width: 500px;
-    height: 100px;
-    background-color: #00392a;
-    border-radius: 50px;
+    width: 50vw;
+    height: 10vw;
     position: absolute;
     left: 50%;
     bottom: 10%;
@@ -1058,7 +1176,7 @@ aside .up img {
     -webkit-text-fill-color: #00392a;
   }
   #banner .inner .txt button a {
-    font-size: 40px;
+    font-size: 4vw;
   }
 }
 #aboutOB {
@@ -1069,7 +1187,6 @@ aside .up img {
 }
 #aboutOB .inner {
   width: 1500px;
-  height: 700px;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -1233,7 +1350,7 @@ aside .up img {
   color: #fff;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 874px) {
   #aboutOB {
     width: 100vw;
     margin: 0;
@@ -1246,26 +1363,54 @@ aside .up img {
   }
   #aboutOB .inner article:nth-of-type(1) {
     width: 100%;
-    height: 100%;
-    margin-right: 0px;
+    margin-right: none;
+    margin-bottom: 10px;
   }
-  #aboutOB .inner article:nth-of-type(1) .pic img {
-    margin: 0;
+  #aboutOB .inner article:nth-of-type(1) h2 {
+    font-size: 6vw;
+  }
+  #aboutOB .inner article:nth-of-type(1) p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+  #aboutOB .inner article:nth-of-type(1) a {
+    width: 40vw;
   }
   #aboutOB .inner article:nth-of-type(1) a:hover {
     transition: none;
     border: none;
   }
-  #aboutOB .inner article:nth-of-type(2) {
-    width: 100%;
-    height: 100%;
+  #aboutOB .inner article:nth-of-type(1) a span {
+    font-size: 4vw;
   }
-  #aboutOB .inner article:nth-of-type(2) img {
-    margin: 0;
+  #aboutOB .inner article:nth-of-type(2) {
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
+  #aboutOB .inner article:nth-of-type(2) h2 {
+    font-size: 6vw;
+  }
+  #aboutOB .inner article:nth-of-type(2) p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+  #aboutOB .inner article:nth-of-type(2) a {
+    width: 40vw;
   }
   #aboutOB .inner article:nth-of-type(2) a:hover {
     transition: none;
     border: none;
+  }
+  #aboutOB .inner article:nth-of-type(2) a span {
+    font-size: 4vw;
   }
 }
 
