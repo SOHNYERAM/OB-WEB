@@ -120,42 +120,94 @@
 						img {
 							display: none;
 						}
+						height: 100%;
 						background-image: url(../img_tablet/cass_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
-						height: 100%;
 					}
 					.ob {
 						img {
 							display: none;
 						}
+						height: 100%;
 						background-image: url(../img_tablet/ob_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
-						height: 100%;
 					}
 					.hand {
 						img {
 							display: none;
 						}
+						height: 100%;
 						background-image: url(../img_tablet/hand_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
-						height: 100%;
 					}
 					.bud {
 						img {
 							display: none;
 						}
+						height: 100%;
 						background-image: url(../img_tablet/bud_slide.png);
-
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	#slide {
+		margin-bottom: 10px;
+		.inner {
+			width: 100%;
+			height: 100%;
+			.wrap {
+				ul {
+					.cass {
+						img {
+							display: none;
+						}
 						height: 100%;
+						background-image: url(../img_mobile/slide/cass_slide.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+					}
+					.ob {
+						img {
+							display: none;
+						}
+						height: 100%;
+						background-image: url(../img_mobile/slide/ob_slide.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+					}
+					.hand {
+						img {
+							display: none;
+						}
+						height: 100%;
+						background-image: url(../img_mobile/slide/hand_slide.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+					}
+					.bud {
+						img {
+							display: none;
+						}
+						height: 100%;
+						background-image: url(../img_mobile/slide/bud_slide.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
 					}
 				}
 			}
