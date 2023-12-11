@@ -31,6 +31,311 @@ body {
   background-color: rgb(253, 252, 249);
 }
 
+header {
+  width: 100%;
+  overflow: hidden;
+}
+header .inner {
+  width: 1180px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+header .inner h1 {
+  width: 100%;
+  margin: 0 auto;
+}
+header .inner h1 a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .inner .util {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+header .inner .util ul {
+  display: flex;
+  gap: 20px;
+}
+header .inner .util ul li a {
+  font-size: 18px;
+  font-family: "Pretendard-Regular";
+  font-weight: 300;
+  color: #000;
+}
+header .inner #gnb {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+}
+header .inner #gnb ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .inner #gnb ul li {
+  transition: all 1s;
+}
+header .inner #gnb ul li a {
+  font-size: 26px;
+  font-family: Pretendard-Regular;
+  font-weight: 600;
+  color: #000;
+}
+header .inner #gnb ul li a:hover {
+  border-bottom: 2px solid #144192;
+}
+header .inner .gnbCall {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  transform: translateY(-45%);
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+header .inner .gnbCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #144192;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+header .inner .gnbCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #144192;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+header .inner .gnbCall span {
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #144192;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+  margin-top: -1px;
+  text-indent: -99999px;
+}
+header .inner .gnbCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+header .inner .gnbCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+header .inner .gnbCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+header .inner .moTitle {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  z-index: 10;
+  padding: 40px 40px;
+  background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
+  transition: all 0.5s;
+  display: none;
+}
+header .inner .moTitle.on {
+  left: 0px;
+}
+header .inner .moTitle h2 {
+  border-bottom: 2px solid #144192;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .inner .moTitle h2 a img {
+  width: 250px;
+}
+header .inner .moTitle #gnbMo {
+  transition: 0.5s;
+}
+header .inner .moTitle #gnbMo li a {
+  display: block;
+  font-family: "Pretendard-Regular";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #144192;
+  text-align: center;
+  padding: 20px 0px;
+  text-align: center;
+}
+header .inner .moTitle #gnbMo li a:hover {
+  border-bottom: 3px solid #144192;
+}
+header .inner .moTitle .sns {
+  width: 25vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5%;
+}
+header .inner .moTitle .sns ul {
+  width: 100%;
+  height: 100%;
+}
+header .inner .moTitle .sns ul a {
+  display: block;
+}
+header .inner .moTitle .sns ul a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 874px) {
+  header {
+    width: 100vw;
+  }
+  header .inner {
+    width: 100%;
+    height: 20vh;
+  }
+  header .inner h1 a img {
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+  }
+  header .inner .util {
+    display: none;
+  }
+  header .inner #gnb {
+    display: none;
+  }
+  header .inner .gnbCall {
+    display: block;
+  }
+  header .inner .moTitle {
+    display: block;
+  }
+  header .inner .moTitle #gnbMo {
+    display: block;
+  }
+  header .inner .moTitle .sns {
+    width: 40vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5%;
+  }
+  header .inner .moTitle .sns ul {
+    width: 100%;
+    height: 100%;
+  }
+  header .inner .moTitle .sns ul a {
+    display: block;
+  }
+  header .inner .moTitle .sns ul a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    width: 100vw;
+  }
+  header .inner {
+    width: 100%;
+  }
+  header .inner h1 {
+    margin: 0;
+  }
+  header .inner h1 a img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+  }
+  header .inner .util {
+    display: none;
+  }
+  header .inner #gnb {
+    display: none;
+  }
+  header .inner .gnbCall {
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    transform: translateY(-45%);
+    width: 30px;
+    height: 30px;
+  }
+  header .inner .moTitle {
+    width: 20%;
+    height: 100vh;
+    left: -20%;
+    background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
+    display: none;
+  }
+  header .inner .moTitle.on {
+    left: 0%;
+  }
+  header .inner .moTitle h2 a img {
+    width: 100%;
+  }
+  header .inner .moTitle #gnbMo li a {
+    font-size: 5vw;
+  }
+  header .inner .moTitle #gnbMo li a:hover {
+    border-bottom: none;
+  }
+  header .inner .moTitle .sns {
+    width: 40vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5%;
+  }
+  header .inner .moTitle .sns ul {
+    width: 100%;
+    height: 100%;
+  }
+  header .inner .moTitle .sns ul a {
+    display: block;
+  }
+  header .inner .moTitle .sns ul a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
 footer {
   width: 100%;
   height: 230px;
@@ -370,311 +675,6 @@ footer .sns ul a img {
     display: none;
   }
 }
-header {
-  width: 100%;
-  overflow: hidden;
-}
-header .inner {
-  width: 1180px;
-  height: 350px;
-  margin: 0 auto;
-  position: relative;
-}
-header .inner h1 {
-  width: 100%;
-  margin: 0 auto;
-}
-header .inner h1 a img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-header .inner .util {
-  position: absolute;
-  top: 20px;
-  right: 0;
-}
-header .inner .util ul {
-  display: flex;
-  gap: 20px;
-}
-header .inner .util ul li a {
-  font-size: 18px;
-  font-family: "Pretendard-Regular";
-  font-weight: 300;
-  color: #000;
-}
-header .inner #gnb {
-  position: absolute;
-  width: 100%;
-  bottom: 30px;
-}
-header .inner #gnb ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-header .inner #gnb ul li {
-  transition: all 1s;
-}
-header .inner #gnb ul li a {
-  font-size: 26px;
-  font-family: Pretendard-Regular;
-  font-weight: 600;
-  color: #000;
-}
-header .inner #gnb ul li a:hover {
-  border-bottom: 2px solid #144192;
-}
-header .inner .gnbCall {
-  position: absolute;
-  top: 45%;
-  right: 10%;
-  transform: translateY(-45%);
-  display: none;
-  width: 40px;
-  height: 40px;
-}
-header .inner .gnbCall::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #144192;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: top 0.5s 0s, transform 0.5s 0.5s;
-}
-header .inner .gnbCall::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #144192;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
-}
-header .inner .gnbCall span {
-  display: block;
-  width: 100%;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #144192;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 0.5s;
-  margin-top: -1px;
-  text-indent: -99999px;
-}
-header .inner .gnbCall.on::before {
-  top: 50%;
-  margin-top: -1px;
-  transform: rotate(45deg);
-}
-header .inner .gnbCall.on::after {
-  bottom: 50%;
-  margin-bottom: -1px;
-  transform: rotate(-45deg);
-}
-header .inner .gnbCall.on span {
-  transform: translateX(100%);
-  opacity: 0;
-}
-header .inner .moTitle {
-  width: 320px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: -320px;
-  z-index: 10;
-  padding: 40px 40px;
-  background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
-  transition: all 0.5s;
-  display: none;
-}
-header .inner .moTitle.on {
-  left: 0px;
-}
-header .inner .moTitle h2 {
-  border-bottom: 2px solid #144192;
-  text-align: center;
-  margin-bottom: 20px;
-}
-header .inner .moTitle h2 a img {
-  width: 250px;
-}
-header .inner .moTitle #gnbMo {
-  transition: 0.5s;
-}
-header .inner .moTitle #gnbMo li a {
-  display: block;
-  font-family: "Pretendard-Regular";
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 1.3;
-  color: #144192;
-  text-align: center;
-  padding: 20px 0px;
-  text-align: center;
-}
-header .inner .moTitle #gnbMo li a:hover {
-  border-bottom: 3px solid #144192;
-}
-header .inner .moTitle .sns {
-  width: 25vw;
-  height: 10vh;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 5%;
-}
-header .inner .moTitle .sns ul {
-  width: 100%;
-  height: 100%;
-}
-header .inner .moTitle .sns ul a {
-  display: block;
-}
-header .inner .moTitle .sns ul a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 874px) {
-  header {
-    width: 100vw;
-  }
-  header .inner {
-    width: 100%;
-    height: 20vh;
-  }
-  header .inner h1 a img {
-    top: 50%;
-    left: 20%;
-    transform: translate(-20%, -50%);
-  }
-  header .inner .util {
-    display: none;
-  }
-  header .inner #gnb {
-    display: none;
-  }
-  header .inner .gnbCall {
-    display: block;
-  }
-  header .inner .moTitle {
-    display: block;
-  }
-  header .inner .moTitle #gnbMo {
-    display: block;
-  }
-  header .inner .moTitle .sns {
-    width: 40vw;
-    height: 10vh;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 5%;
-  }
-  header .inner .moTitle .sns ul {
-    width: 100%;
-    height: 100%;
-  }
-  header .inner .moTitle .sns ul a {
-    display: block;
-  }
-  header .inner .moTitle .sns ul a img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-}
-@media screen and (max-width: 400px) {
-  header {
-    width: 100vw;
-  }
-  header .inner {
-    width: 100%;
-  }
-  header .inner h1 {
-    margin: 0;
-  }
-  header .inner h1 a img {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-10%, -50%);
-  }
-  header .inner .util {
-    display: none;
-  }
-  header .inner #gnb {
-    display: none;
-  }
-  header .inner .gnbCall {
-    display: block;
-    position: absolute;
-    top: 45%;
-    right: 10%;
-    transform: translateY(-45%);
-    width: 30px;
-    height: 30px;
-  }
-  header .inner .moTitle {
-    width: 20%;
-    height: 100vh;
-    left: -20%;
-    background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
-    display: none;
-  }
-  header .inner .moTitle.on {
-    left: 0%;
-  }
-  header .inner .moTitle h2 a img {
-    width: 100%;
-  }
-  header .inner .moTitle #gnbMo li a {
-    font-size: 5vw;
-  }
-  header .inner .moTitle #gnbMo li a:hover {
-    border-bottom: none;
-  }
-  header .inner .moTitle .sns {
-    width: 40vw;
-    height: 10vh;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 5%;
-  }
-  header .inner .moTitle .sns ul {
-    width: 100%;
-    height: 100%;
-  }
-  header .inner .moTitle .sns ul a {
-    display: block;
-  }
-  header .inner .moTitle .sns ul a img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-}
 aside {
   width: 100%;
   height: 100%;
@@ -698,11 +698,17 @@ aside .up img {
 }
 
 @media screen and (max-width: 874px) {
+  aside {
+    width: 100%;
+  }
   aside .up img {
     display: none;
   }
 }
 @media screen and (max-width: 400px) {
+  aside {
+    width: 100%;
+  }
   aside .up img {
     display: none;
   }
