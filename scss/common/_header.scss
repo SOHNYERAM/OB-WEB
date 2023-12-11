@@ -45,14 +45,14 @@ header {
 				justify-content: space-between;
 
 				li {
-					transition: all 1s;
 					a {
 						font-size: 26px;
 						font-family: Pretendard-Regular;
 						font-weight: 600;
 						color: #000;
 						&:hover {
-							border-bottom: 2px solid #144192;
+							color: #144192;
+							border-bottom: 3px solid #144192;
 						}
 					}
 				}

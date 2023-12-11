@@ -76,9 +76,6 @@ header .inner #gnb ul {
   display: flex;
   justify-content: space-between;
 }
-header .inner #gnb ul li {
-  transition: all 1s;
-}
 header .inner #gnb ul li a {
   font-size: 26px;
   font-family: Pretendard-Regular;
@@ -86,7 +83,8 @@ header .inner #gnb ul li a {
   color: #000;
 }
 header .inner #gnb ul li a:hover {
-  border-bottom: 2px solid #144192;
+  color: #144192;
+  border-bottom: 3px solid #144192;
 }
 header .inner .gnbCall {
   position: absolute;
