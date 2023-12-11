@@ -10,15 +10,30 @@ aside {
 		left: 50%;
 		transform: translateX(-50%);
 		img {
-			width: 80px;
-			height: 80px;
+			width: 60px;
+			height: 60px;
 			position: absolute;
-			bottom: 60%;
-			right: -120px;
-			transform: translateY(-60%);
+			bottom: 100%;
+			right: 50px;
+			transform: translateY(-50%);
 		}
 	}
 }
-// @media screen and (max-width: 874px) {
-// 	display: none;
-// }
+@media screen and (max-width: 874px) {
+	aside {
+		.up {
+			img {
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	aside {
+		.up {
+			img {
+				display: none;
+			}
+		}
+	}
+}

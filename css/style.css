@@ -305,22 +305,7 @@ footer .sns ul a img {
     font-size: 3vw;
   }
   footer .sns {
-    position: absolute;
-    bottom: 25%;
-    left: 62%;
-    transform: translateY(-25%);
-  }
-  footer .sns ul {
-    width: 100%;
-    height: 100%;
-  }
-  footer .sns ul a {
-    display: block;
-  }
-  footer .sns ul a img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
@@ -430,11 +415,17 @@ header .inner #gnb ul {
   display: flex;
   justify-content: space-between;
 }
+header .inner #gnb ul li {
+  transition: all 1s;
+}
 header .inner #gnb ul li a {
   font-size: 26px;
   font-family: Pretendard-Regular;
   font-weight: 600;
   color: #000;
+}
+header .inner #gnb ul li a:hover {
+  border-bottom: 2px solid #144192;
 }
 header .inner .gnbCall {
   position: absolute;
@@ -584,6 +575,28 @@ header .inner .moTitle .sns ul a img {
   header .inner #gnbMo {
     display: block;
   }
+  header .inner .sns {
+    width: 40vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5%;
+  }
+  header .inner .sns ul {
+    width: 100%;
+    height: 100%;
+  }
+  header .inner .sns ul a {
+    display: block;
+  }
+  header .inner .sns ul a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 }
 @media screen and (max-width: 400px) {
   header .inner {
@@ -670,14 +683,24 @@ aside .up {
   transform: translateX(-50%);
 }
 aside .up img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  bottom: 60%;
-  right: -120px;
-  transform: translateY(-60%);
+  bottom: 100%;
+  right: 50px;
+  transform: translateY(-50%);
 }
 
+@media screen and (max-width: 874px) {
+  aside .up img {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  aside .up img {
+    display: none;
+  }
+}
 #slide {
   width: 100%;
   margin: 0 auto;
