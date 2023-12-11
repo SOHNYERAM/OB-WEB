@@ -195,6 +195,7 @@ header {
 }
 @media screen and (max-width: 874px) {
 	header {
+		width: 100vw;
 		.inner {
 			width: 100%;
 			height: 20vh;
@@ -218,31 +219,31 @@ header {
 			}
 			.moTitle {
 				display: block;
-			}
-			#gnbMo {
-				display: block;
-			}
-			.sns {
-				width: 40vw;
-				height: 10vh;
-				position: absolute;
-				bottom: 0%;
-				left: 50%;
-				transform: translateX(-50%);
-				display: flex;
-				gap: 5%;
+				#gnbMo {
+					display: block;
+				}
+				.sns {
+					width: 40vw;
+					height: 10vh;
+					position: absolute;
+					bottom: 0%;
+					left: 50%;
+					transform: translateX(-50%);
+					display: flex;
+					gap: 5%;
 
-				ul {
-					width: 100%;
-					height: 100%;
+					ul {
+						width: 100%;
+						height: 100%;
 
-					a {
-						display: block;
+						a {
+							display: block;
 
-						img {
-							width: 100%;
-							height: 100%;
-							border-radius: 50%;
+							img {
+								width: 100%;
+								height: 100%;
+								border-radius: 50%;
+							}
 						}
 					}
 				}
@@ -252,6 +253,7 @@ header {
 }
 @media screen and (max-width: 400px) {
 	header {
+		width: 100vw;
 		.inner {
 			width: 100%;
 			h1 {
