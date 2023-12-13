@@ -2816,5 +2816,144 @@ aside .up img {
     transform: translateY(-40%);
   }
 }
+@media screen and (max-width: 874px) {
+  .obM {
+    width: 100vw;
+  }
+  .obM > img {
+    width: 30vw;
+    height: 38vh;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  .obM p:nth-of-type(2) {
+    width: 86%;
+    font-size: 2vw;
+  }
+  .obM .bears .bearLeft {
+    width: 30vw;
+    height: 25vh;
+  }
+  .obM .bears .bearRight {
+    width: 27vw;
+    height: 29vh;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    transform: translateY(-40%);
+    animation: bearLeft 6s linear infinite;
+  }
+  .obS {
+    width: 100vw;
+    height: 70vh;
+  }
+  .obS .obImg img {
+    width: 35vw;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-10%, -35%);
+  }
+  .obS .obImg h2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateY(-15%);
+    font-size: 5vw;
+  }
+  .obS .obImg p:nth-of-type(1) {
+    width: 100%;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateY(-32%);
+    font-size: 3vw;
+    line-height: 1.3;
+  }
+  .obS .obImg p:nth-of-type(2) {
+    top: 52%;
+    left: 50%;
+    transform: translateY(-47%);
+    font-size: 3vw;
+  }
+  .obS .obV {
+    position: absolute;
+    left: 60%;
+    gap: 5vw;
+  }
+  .obS .obV section > article img {
+    width: 7vw;
+    height: 9vh;
+  }
+  .obS .obV section .con h3 {
+    font-size: 2vw;
+  }
+  .goods {
+    width: 100%;
+  }
+  .goods section {
+    width: 100%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+  }
+  .goods section article a {
+    display: block;
+    width: 250px;
+    height: 250px;
+  }
+  .goods section article a img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #d1cbcb;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.5s;
+  }
+  .goods section article a img:hover {
+    border-color: #6d0000;
+  }
+  .goods section article li {
+    font-family: "Pretendard-Regular";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #3b3219;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .goods .moreBtn {
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 44%;
+  }
+  .goods .moreBtn a {
+    display: block;
+    width: 250px;
+    height: 60px;
+    background-color: #6d0000;
+    font-family: "Pretendard-Regular";
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .goods .moreBtn a:hover {
+    background-color: #fff;
+    color: #6d0000;
+    border: 2px solid #6d0000;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
