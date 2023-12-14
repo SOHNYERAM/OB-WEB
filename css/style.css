@@ -147,14 +147,15 @@ header .inner .gnbCall.on span {
   opacity: 0;
 }
 header .inner .moTitle {
-  width: 320px;
+  width: 350px;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -320px;
+  left: -400px;
   z-index: 10;
   padding: 40px 40px;
-  background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
+  background-color: #fdfcf9;
+  box-shadow: 1px 2px 15px #111;
   transition: all 0.5s;
   display: none;
 }
@@ -176,7 +177,7 @@ header .inner .moTitle #gnbMo li a {
   display: block;
   font-family: "Pretendard-Regular";
   font-weight: 300;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.3;
   color: #144192;
   text-align: center;
@@ -207,6 +208,7 @@ header .inner .moTitle .sns ul a img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  box-shadow: 1px 2px 5px #000;
 }
 
 @media screen and (max-width: 874px) {
@@ -238,7 +240,7 @@ header .inner .moTitle .sns ul a img {
     display: block;
   }
   header .inner .moTitle .sns {
-    width: 40vw;
+    width: 20vw;
     height: 10vh;
     position: absolute;
     bottom: 0%;
@@ -296,7 +298,6 @@ header .inner .moTitle .sns ul a img {
     width: 20%;
     height: 100vh;
     left: -20%;
-    background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
     display: none;
   }
   header .inner .moTitle.on {
@@ -312,7 +313,7 @@ header .inner .moTitle .sns ul a img {
     border-bottom: none;
   }
   header .inner .moTitle .sns {
-    width: 40vw;
+    width: 15vw;
     height: 10vh;
     position: absolute;
     bottom: 0%;
@@ -523,6 +524,74 @@ footer .sns ul a img {
   height: 50px;
   border-radius: 50%;
 }
+footer .btnTop {
+  display: block;
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  bottom: 40%;
+  right: 10%;
+  margin-right: -100px;
+}
+footer .btnTop::before, footer .btnTop::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  background-color: #144192;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: center top;
+  transition: 0.5s;
+}
+footer .btnTop::before {
+  transform: rotate(45deg);
+}
+footer .btnTop::after {
+  transform: rotate(-45deg);
+}
+footer .btnTop span {
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: #144192;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 0.5s;
+}
+footer .btnTop h2 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Pretendard-Regular";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #144192;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+footer .btnTop:hover::before {
+  transform: rotate(45deg) translateY(-40px);
+  opacity: 0;
+}
+footer .btnTop:hover::after {
+  transform: rotate(-45deg) translateY(-40px);
+  opacity: 0;
+}
+footer .btnTop:hover span {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+footer .btnTop:hover h2 {
+  top: 50%;
+  opacity: 1;
+}
 
 @media screen and (max-width: 874px) {
   footer {
@@ -537,8 +606,8 @@ footer .sns ul a img {
   footer .inner h2 a {
     position: absolute;
     top: 20%;
-    left: 3%;
-    transform: translate(4%, -20%);
+    left: 8%;
+    transform: translate(-3%, -20%);
   }
   footer .inner h2 a img {
     width: 80%;
@@ -549,7 +618,7 @@ footer .sns ul a img {
     gap: 20px;
     position: absolute;
     top: 40%;
-    left: 4%;
+    left: 8%;
   }
   footer .inner div ul li:nth-of-type(1) a {
     font-size: 2vw;
@@ -563,7 +632,7 @@ footer .sns ul a img {
   footer .inner div address {
     position: absolute;
     bottom: 30%;
-    left: 4%;
+    left: 8%;
     font-size: 2vw;
   }
   footer .inner div p {
@@ -571,16 +640,16 @@ footer .sns ul a img {
     display: flex;
     position: absolute;
     bottom: 18%;
-    left: 4%;
+    left: 8%;
     font-size: 2vw;
   }
   footer .inner select {
     width: 30vw;
     height: 5vh;
-    font-size: 3vw;
+    font-size: 2vw;
     position: absolute;
     top: 35%;
-    right: 12%;
+    right: 8%;
     transform: translateY(-35%);
   }
   footer .inner select option:nth-of-type(1) {
@@ -610,6 +679,9 @@ footer .sns ul a img {
   footer .sns {
     display: none;
   }
+  footer .btnTop {
+    display: none;
+  }
 }
 @media screen and (max-width: 400px) {
   footer {
@@ -624,8 +696,8 @@ footer .sns ul a img {
   footer .inner h2 a {
     position: absolute;
     top: 30%;
-    left: 2%;
-    transform: translate(2%, -50%);
+    left: 10%;
+    transform: translate(-10%, -50%);
   }
   footer .inner h2 a img {
     width: 60%;
@@ -636,8 +708,8 @@ footer .sns ul a img {
     display: flex;
     gap: 20px;
     position: absolute;
-    top: 35%;
-    left: 5%;
+    top: 37%;
+    left: 7%;
   }
   footer .inner div ul li:nth-of-type(1) a {
     font-size: 3vw;
@@ -651,13 +723,13 @@ footer .sns ul a img {
   footer .inner div address {
     position: absolute;
     bottom: 30%;
-    left: 5%;
+    left: 7%;
     font-size: 3vw;
   }
   footer .inner div p {
     position: absolute;
     bottom: 22%;
-    left: 5%;
+    left: 7%;
     font-size: 3vw;
   }
   footer .inner select {
@@ -672,42 +744,7 @@ footer .sns ul a img {
   footer .sns {
     display: none;
   }
-}
-aside {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-aside .up {
-  width: 1920px;
-  height: 100%;
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-aside .up img {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  bottom: 100%;
-  right: 50px;
-  transform: translateY(-50%);
-}
-
-@media screen and (max-width: 874px) {
-  aside {
-    width: 100%;
-  }
-  aside .up img {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  aside {
-    width: 100%;
-  }
-  aside .up img {
+  footer .btnTop {
     display: none;
   }
 }
@@ -827,14 +864,15 @@ aside .up img {
   opacity: 0;
 }
 #header_sub .inner .moTitle {
-  width: 320px;
+  width: 350px;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -320px;
+  left: -400px;
   z-index: 10;
   padding: 40px 40px;
-  background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
+  background-color: #fdfcf9;
+  box-shadow: 1px 2px 15px #111;
   transition: all 0.5s;
   display: none;
 }
@@ -856,7 +894,7 @@ aside .up img {
   display: block;
   font-family: "Pretendard-Regular";
   font-weight: 300;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.3;
   color: #144192;
   text-align: center;
@@ -887,38 +925,39 @@ aside .up img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  box-shadow: 1px 2px 5px #000;
 }
 
 @media screen and (max-width: 874px) {
-  header {
+  #header_sub {
     width: 100vw;
   }
-  header .inner {
+  #header_sub .inner {
     width: 100%;
     height: 20vh;
   }
-  header .inner h1 a img {
+  #header_sub .inner h1 a img {
     top: 50%;
     left: 20%;
     transform: translate(-20%, -50%);
   }
-  header .inner .util {
+  #header_sub .inner .util {
     display: none;
   }
-  header .inner #gnb {
+  #header_sub .inner #gnb {
     display: none;
   }
-  header .inner .gnbCall {
+  #header_sub .inner .gnbCall {
     display: block;
   }
-  header .inner .moTitle {
+  #header_sub .inner .moTitle {
     display: block;
   }
-  header .inner .moTitle #gnbMo {
+  #header_sub .inner .moTitle #gnbMo {
     display: block;
   }
-  header .inner .moTitle .sns {
-    width: 40vw;
+  #header_sub .inner .moTitle .sns {
+    width: 20vw;
     height: 10vh;
     position: absolute;
     bottom: 0%;
@@ -927,43 +966,43 @@ aside .up img {
     display: flex;
     gap: 5%;
   }
-  header .inner .moTitle .sns ul {
+  #header_sub .inner .moTitle .sns ul {
     width: 100%;
     height: 100%;
   }
-  header .inner .moTitle .sns ul a {
+  #header_sub .inner .moTitle .sns ul a {
     display: block;
   }
-  header .inner .moTitle .sns ul a img {
+  #header_sub .inner .moTitle .sns ul a img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
   }
 }
 @media screen and (max-width: 400px) {
-  header {
+  #header_sub {
     width: 100vw;
   }
-  header .inner {
+  #header_sub .inner {
     width: 100%;
   }
-  header .inner h1 {
+  #header_sub .inner h1 {
     margin: 0;
   }
-  header .inner h1 a img {
+  #header_sub .inner h1 a img {
     width: 50%;
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(-10%, -50%);
   }
-  header .inner .util {
+  #header_sub .inner .util {
     display: none;
   }
-  header .inner #gnb {
+  #header_sub .inner #gnb {
     display: none;
   }
-  header .inner .gnbCall {
+  #header_sub .inner .gnbCall {
     display: block;
     position: absolute;
     top: 45%;
@@ -972,27 +1011,27 @@ aside .up img {
     width: 30px;
     height: 30px;
   }
-  header .inner .moTitle {
+  #header_sub .inner .moTitle {
     width: 20%;
     height: 100vh;
     left: -20%;
     background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
     display: none;
   }
-  header .inner .moTitle.on {
+  #header_sub .inner .moTitle.on {
     left: 0%;
   }
-  header .inner .moTitle h2 a img {
+  #header_sub .inner .moTitle h2 a img {
     width: 100%;
   }
-  header .inner .moTitle #gnbMo li a {
+  #header_sub .inner .moTitle #gnbMo li a {
     font-size: 5vw;
   }
-  header .inner .moTitle #gnbMo li a:hover {
+  #header_sub .inner .moTitle #gnbMo li a:hover {
     border-bottom: none;
   }
-  header .inner .moTitle .sns {
-    width: 40vw;
+  #header_sub .inner .moTitle .sns {
+    width: 15vw;
     height: 10vh;
     position: absolute;
     bottom: 0%;
@@ -1001,14 +1040,14 @@ aside .up img {
     display: flex;
     gap: 5%;
   }
-  header .inner .moTitle .sns ul {
+  #header_sub .inner .moTitle .sns ul {
     width: 100%;
     height: 100%;
   }
-  header .inner .moTitle .sns ul a {
+  #header_sub .inner .moTitle .sns ul a {
     display: block;
   }
-  header .inner .moTitle .sns ul a img {
+  #header_sub .inner .moTitle .sns ul a img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -1203,115 +1242,186 @@ aside .up img {
   height: 50px;
   border-radius: 50%;
 }
+#footer_sub .btnTop .btnTop {
+  display: block;
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  bottom: 40%;
+  right: 10%;
+  margin-right: -100px;
+}
+#footer_sub .btnTop .btnTop::before, #footer_sub .btnTop .btnTop::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  background-color: #144192;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: center top;
+  transition: 0.5s;
+}
+#footer_sub .btnTop .btnTop::before {
+  transform: rotate(45deg);
+}
+#footer_sub .btnTop .btnTop::after {
+  transform: rotate(-45deg);
+}
+#footer_sub .btnTop .btnTop span {
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: #144192;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 0.5s;
+}
+#footer_sub .btnTop .btnTop h2 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Pretendard-Regular";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #144192;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+#footer_sub .btnTop .btnTop:hover::before {
+  transform: rotate(45deg) translateY(-40px);
+  opacity: 0;
+}
+#footer_sub .btnTop .btnTop:hover::after {
+  transform: rotate(-45deg) translateY(-40px);
+  opacity: 0;
+}
+#footer_sub .btnTop .btnTop:hover span {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+#footer_sub .btnTop .btnTop:hover h2 {
+  top: 50%;
+  opacity: 1;
+}
 
 @media screen and (max-width: 874px) {
-  footer {
+  #footer_sub {
     width: 100vw;
   }
-  footer .inner {
+  #footer_sub .inner {
     width: 100%;
   }
-  footer .inner h2 {
+  #footer_sub .inner h2 {
     width: 100%;
   }
-  footer .inner h2 a {
+  #footer_sub .inner h2 a {
     position: absolute;
     top: 20%;
-    left: 3%;
-    transform: translate(4%, -20%);
+    left: 8%;
+    transform: translate(-3%, -20%);
   }
-  footer .inner h2 a img {
+  #footer_sub .inner h2 a img {
     width: 80%;
     height: 80%;
   }
-  footer .inner div ul {
+  #footer_sub .inner div ul {
     width: 100%;
     gap: 20px;
     position: absolute;
     top: 40%;
-    left: 4%;
+    left: 8%;
   }
-  footer .inner div ul li:nth-of-type(1) a {
+  #footer_sub .inner div ul li:nth-of-type(1) a {
     font-size: 2vw;
   }
-  footer .inner div ul li:nth-of-type(2) a {
+  #footer_sub .inner div ul li:nth-of-type(2) a {
     font-size: 2vw;
   }
-  footer .inner div ul li:nth-of-type(3) a {
+  #footer_sub .inner div ul li:nth-of-type(3) a {
     font-size: 2vw;
   }
-  footer .inner div address {
+  #footer_sub .inner div address {
     position: absolute;
     bottom: 30%;
-    left: 4%;
+    left: 8%;
     font-size: 2vw;
   }
-  footer .inner div p {
+  #footer_sub .inner div p {
     width: 100%;
     display: flex;
     position: absolute;
     bottom: 18%;
-    left: 4%;
+    left: 8%;
     font-size: 2vw;
   }
-  footer .inner select {
+  #footer_sub .inner select {
     width: 30vw;
     height: 5vh;
-    font-size: 3vw;
+    font-size: 2vw;
     position: absolute;
     top: 35%;
-    right: 12%;
+    right: 8%;
     transform: translateY(-35%);
   }
-  footer .inner select option:nth-of-type(1) {
+  #footer_sub .inner select option:nth-of-type(1) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(2) {
+  #footer_sub .inner select option:nth-of-type(2) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(3) {
+  #footer_sub .inner select option:nth-of-type(3) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(4) {
+  #footer_sub .inner select option:nth-of-type(4) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(5) {
+  #footer_sub .inner select option:nth-of-type(5) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(6) {
+  #footer_sub .inner select option:nth-of-type(6) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(7) {
+  #footer_sub .inner select option:nth-of-type(7) {
     font-size: 3vw;
   }
-  footer .inner select option:nth-of-type(8) {
+  #footer_sub .inner select option:nth-of-type(8) {
     font-size: 3vw;
   }
-  footer .sns {
+  #footer_sub .sns {
+    display: none;
+  }
+  #footer_sub .btnTop {
     display: none;
   }
 }
 @media screen and (max-width: 400px) {
-  footer {
+  #footer_sub {
     width: 100vw;
   }
-  footer .inner {
+  #footer_sub .inner {
     width: 100%;
   }
-  footer .inner h2 {
+  #footer_sub .inner h2 {
     width: 100%;
   }
-  footer .inner h2 a {
+  #footer_sub .inner h2 a {
     position: absolute;
     top: 30%;
     left: 2%;
     transform: translate(2%, -50%);
   }
-  footer .inner h2 a img {
+  #footer_sub .inner h2 a img {
     width: 60%;
     height: 60%;
   }
-  footer .inner div ul {
+  #footer_sub .inner div ul {
     width: 100%;
     display: flex;
     gap: 20px;
@@ -1319,28 +1429,28 @@ aside .up img {
     top: 35%;
     left: 5%;
   }
-  footer .inner div ul li:nth-of-type(1) a {
+  #footer_sub .inner div ul li:nth-of-type(1) a {
     font-size: 3vw;
   }
-  footer .inner div ul li:nth-of-type(2) a {
+  #footer_sub .inner div ul li:nth-of-type(2) a {
     font-size: 3vw;
   }
-  footer .inner div ul li:nth-of-type(3) a {
+  #footer_sub .inner div ul li:nth-of-type(3) a {
     font-size: 3vw;
   }
-  footer .inner div address {
+  #footer_sub .inner div address {
     position: absolute;
     bottom: 30%;
     left: 5%;
     font-size: 3vw;
   }
-  footer .inner div p {
+  #footer_sub .inner div p {
     position: absolute;
     bottom: 22%;
     left: 5%;
     font-size: 3vw;
   }
-  footer .inner select {
+  #footer_sub .inner select {
     width: 90vw;
     height: 7vh;
     font-size: 5vw;
@@ -1349,7 +1459,10 @@ aside .up img {
     right: 5%;
     transform: translateY(-50%);
   }
-  footer .sns {
+  #footer_sub .sns {
+    display: none;
+  }
+  #footer_sub .btnTop {
     display: none;
   }
 }
@@ -2716,15 +2829,13 @@ aside .up img {
 
 .goods {
   width: 100%;
-  height: 1100px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
 }
 .goods h2 {
   width: 100%;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -15%);
   font-family: "Pretendard-Regular";
   font-weight: bold;
   font-size: 40px;
@@ -2732,22 +2843,39 @@ aside .up img {
   letter-spacing: 1px;
   color: #3b3219;
   text-align: center;
+  margin-bottom: 50px;
 }
-.goods section {
-  width: 100%;
-  position: relative;
-  top: 33%;
+.goods div {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
+  flex-direction: row;
+  margin-bottom: 150px;
 }
-.goods section article a {
+.goods div .gdCon1 {
+  width: 50%;
+  position: relative;
+  top: 25%;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  padding-left: 230px;
+}
+.goods div .gdCon2 {
+  width: 50%;
+  position: relative;
+  top: 25%;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  padding: 0 75px;
+}
+.goods div .gdCon1 article a,
+.goods div .gdCon2 article a {
   display: block;
   width: 250px;
   height: 250px;
 }
-.goods section article a img {
+.goods div .gdCon1 article a img,
+.goods div .gdCon2 article a img {
   width: 100%;
   height: 100%;
   border: 3px solid #d1cbcb;
@@ -2755,10 +2883,12 @@ aside .up img {
   object-fit: cover;
   transition: all 0.5s;
 }
-.goods section article a img:hover {
+.goods div .gdCon1 article a img:hover,
+.goods div .gdCon2 article a img:hover {
   border-color: #6d0000;
 }
-.goods section article li {
+.goods div .gdCon1 article li,
+.goods div .gdCon2 article li {
   font-family: "Pretendard-Regular";
   font-weight: bold;
   font-size: 20px;
@@ -2770,9 +2900,8 @@ aside .up img {
 }
 .goods .moreBtn {
   width: 100%;
-  position: absolute;
-  top: 75%;
-  left: 44%;
+  height: 100%;
+  position: relative;
 }
 .goods .moreBtn a {
   display: block;
@@ -2787,6 +2916,7 @@ aside .up img {
   color: #fff;
   text-align: center;
   border-radius: 30px;
+  margin: 0 auto;
 }
 .goods .moreBtn a:hover {
   background-color: #fff;
@@ -2890,69 +3020,98 @@ aside .up img {
   .obS .obV section .con h3 {
     font-size: 2vw;
   }
-  .goods {
-    width: 100%;
+  .goods h2 {
+    margin-bottom: 100px;
   }
-  .goods section {
-    width: 100%;
-    position: relative;
-    top: 25%;
+  .goods div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
+    margin-bottom: 100px;
   }
-  .goods section article a {
-    display: block;
-    width: 250px;
-    height: 250px;
-  }
-  .goods section article a img {
+  .goods div .gdCon1 {
     width: 100%;
-    height: 100%;
-    border: 3px solid #d1cbcb;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: all 0.5s;
+    top: 0%;
+    padding: 0 112px;
+    margin-bottom: 50px;
   }
-  .goods section article a img:hover {
-    border-color: #6d0000;
+  .goods div .gdCon2 {
+    width: 100%;
+    top: 0%;
+    gap: 150px;
+    padding: 0 112px;
   }
-  .goods section article li {
-    font-family: "Pretendard-Regular";
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: 1px;
-    color: #3b3219;
-    text-align: center;
-    margin-top: 25px;
+  .goods div .gdCon1 article li,
+  .goods div .gdCon2 article li {
+    margin: 30px 0px;
   }
-  .goods .moreBtn {
+}
+@media screen and (max-width: 400px) {
+  .obM {
+    width: 1920px;
+    height: 850px;
+    background-color: #6d0000;
+    position: relative;
+  }
+  .obM > img {
+    width: 280px;
+    height: 420px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  .obM p:nth-of-type(1) {
     width: 100%;
     position: absolute;
-    top: 75%;
-    left: 44%;
-  }
-  .goods .moreBtn a {
-    display: block;
-    width: 250px;
-    height: 60px;
-    background-color: #6d0000;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -18%);
     font-family: "Pretendard-Regular";
     font-weight: 200;
-    font-size: 25px;
-    line-height: 2.5;
-    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #fbda81;
+    text-align: center;
+  }
+  .obM p:nth-of-type(2) {
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    font-family: "Pretendard-Regular";
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.4;
     color: #fff;
     text-align: center;
-    border-radius: 30px;
+    opacity: 0.8;
   }
-  .goods .moreBtn a:hover {
-    background-color: #fff;
-    color: #6d0000;
-    border: 2px solid #6d0000;
+  .obM .bears {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .obM .bears img {
+    display: block;
+  }
+  .obM .bears .bearLeft {
+    width: 677px;
+    height: 493px;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    transform: translateY(-40%);
+    animation: bearLeft 6s linear infinite;
+  }
+  .obM .bears .bearRight {
+    width: 710px;
+    height: 564px;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    transform: translateY(-40%);
+    animation: bearLeft 6s linear infinite;
   }
 }
 

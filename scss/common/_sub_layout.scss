@@ -122,15 +122,15 @@
 			}
 		}
 		.moTitle {
-			width: 320px;
+			width: 350px;
 			height: 100vh;
-
 			position: fixed;
 			top: 0;
-			left: -320px;
+			left: -400px;
 			z-index: 10;
 			padding: 40px 40px;
-			background: linear-gradient(45deg, #144192, #c2d1eb, #ffffff);
+			background-color: #fdfcf9;
+			box-shadow: 1px 2px 15px #111;
 			transition: all 0.5s;
 			display: none;
 			&.on {
@@ -153,7 +153,7 @@
 						display: block;
 						font-family: 'Pretendard-Regular';
 						font-weight: 300;
-						font-size: 30px;
+						font-size: 25px;
 						line-height: 1.3;
 						color: #144192;
 						text-align: center;
@@ -186,6 +186,7 @@
 							width: 100%;
 							height: 100%;
 							border-radius: 50%;
+							box-shadow: 1px 2px 5px #000;
 						}
 					}
 				}
@@ -194,7 +195,7 @@
 	}
 }
 @media screen and (max-width: 874px) {
-	header {
+	#header_sub {
 		width: 100vw;
 		.inner {
 			width: 100%;
@@ -223,7 +224,7 @@
 					display: block;
 				}
 				.sns {
-					width: 40vw;
+					width: 20vw;
 					height: 10vh;
 					position: absolute;
 					bottom: 0%;
@@ -252,7 +253,7 @@
 	}
 }
 @media screen and (max-width: 400px) {
-	header {
+	#header_sub {
 		width: 100vw;
 		.inner {
 			width: 100%;
@@ -310,7 +311,7 @@
 					}
 				}
 				.sns {
-					width: 40vw;
+					width: 15vw;
 					height: 10vh;
 					position: absolute;
 					bottom: 0%;
@@ -485,21 +486,93 @@
 			}
 		}
 	}
+	.btnTop {
+		.btnTop {
+			display: block;
+			width: 60px;
+			height: 50px;
+			position: absolute;
+			bottom: 40%;
+			right: 10%;
+			margin-right: -100px;
+			&::before,
+			&::after {
+				content: '';
+				display: block;
+				width: 2px;
+				height: 25px;
+				background-color: #144192;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform-origin: center top;
+				transition: 0.5s;
+			}
+			&::before {
+				transform: rotate(45deg);
+			}
+			&::after {
+				transform: rotate(-45deg);
+			}
+			span {
+				display: block;
+				width: 2px;
+				height: 40px;
+				background-color: #144192;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transition: 0.5s;
+			}
+			h2 {
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				font-family: 'Pretendard-Regular';
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 1;
+				letter-spacing: 1px;
+				color: #144192;
+				text-align: center;
+				transition: 0.5s;
+				opacity: 0;
+			}
+			&:hover {
+				&::before {
+					transform: rotate(45deg) translateY(-40px);
+					opacity: 0;
+				}
+				&::after {
+					transform: rotate(-45deg) translateY(-40px);
+					opacity: 0;
+				}
+				span {
+					transform: translateY(-40px);
+					opacity: 0;
+				}
+				h2 {
+					top: 50%;
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 874px) {
-	footer {
+	#footer_sub {
 		width: 100vw;
 		.inner {
 			width: 100%;
 			h2 {
 				width: 100%;
-				// height: 100%;
 				a {
 					position: absolute;
 					top: 20%;
-					left: 3%;
-					transform: translate(4%, -20%);
+					left: 8%;
+					transform: translate(-3%, -20%);
 					img {
 						width: 80%;
 						height: 80%;
@@ -512,7 +585,7 @@
 					gap: 20px;
 					position: absolute;
 					top: 40%;
-					left: 4%;
+					left: 8%;
 					li:nth-of-type(1) {
 						a {
 							font-size: 2vw;
@@ -532,7 +605,7 @@
 				address {
 					position: absolute;
 					bottom: 30%;
-					left: 4%;
+					left: 8%;
 					font-size: 2vw;
 				}
 				p {
@@ -540,17 +613,17 @@
 					display: flex;
 					position: absolute;
 					bottom: 18%;
-					left: 4%;
+					left: 8%;
 					font-size: 2vw;
 				}
 			}
 			select {
 				width: 30vw;
 				height: 5vh;
-				font-size: 3vw;
+				font-size: 2vw;
 				position: absolute;
 				top: 35%;
-				right: 12%;
+				right: 8%;
 				transform: translateY(-35%);
 				@for $i from 1 through 8 {
 					option:nth-of-type(#{$i}) {
@@ -562,10 +635,13 @@
 		.sns {
 			display: none;
 		}
+		.btnTop {
+			display: none;
+		}
 	}
 }
 @media screen and (max-width: 400px) {
-	footer {
+	#footer_sub {
 		width: 100vw;
 		.inner {
 			width: 100%;
@@ -632,6 +708,9 @@
 			}
 		}
 		.sns {
+			display: none;
+		}
+		.btnTop {
 			display: none;
 		}
 	}
