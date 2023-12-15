@@ -99,6 +99,13 @@
 					border-radius: 50%;
 					background-color: #dddddd;
 					opacity: 0.5;
+					&.on {
+						display: block;
+						width: 40px;
+						border-radius: 10px;
+						background-color: #144192;
+						opacity: 1;
+					}
 				}
 			}
 		}
@@ -121,7 +128,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_tablet/cass_slide.png);
+						background-image: url(../img_main_tablet/cass_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -131,7 +138,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_tablet/ob_slide.png);
+						background-image: url(../img_main_tablet/ob_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -141,7 +148,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_tablet/hand_slide.png);
+						background-image: url(../img_main_tablet/hand_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -151,7 +158,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_tablet/bud_slide.png);
+						background-image: url(../img_main_tablet/bud_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -174,7 +181,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_mobile/slide/cass_slide.png);
+						background-image: url(../img_main_mobile/slide/cass_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -184,7 +191,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_mobile/slide/ob_slide.png);
+						background-image: url(../img_main_mobile/slide/ob_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -194,7 +201,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_mobile/slide/hand_slide.png);
+						background-image: url(../img_main_mobile/slide/hand_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
@@ -204,7 +211,7 @@
 							display: none;
 						}
 						height: 100%;
-						background-image: url(../img_mobile/slide/bud_slide.png);
+						background-image: url(../img_main_mobile/slide/bud_slide.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
