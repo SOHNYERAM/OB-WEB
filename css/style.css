@@ -348,17 +348,17 @@ footer .inner {
   position: relative;
 }
 footer .inner h2 {
+  width: 100%;
+  height: 100%;
+}
+footer .inner h2 a {
+  display: block;
   width: 190px;
   height: 55px;
   position: absolute;
   top: 50%;
   left: -2%;
   transform: translate(2%, -50%);
-}
-footer .inner h2 a {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 footer .inner h2 a img {
   width: 100%;
@@ -504,7 +504,7 @@ footer .inner select option:nth-of-type(8) {
 }
 footer .sns {
   width: 230px;
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -524,7 +524,7 @@ footer .sns ul a img {
   height: 50px;
   border-radius: 50%;
 }
-footer .btnTop {
+footer .btnTop .btnTop {
   display: block;
   width: 60px;
   height: 50px;
@@ -533,10 +533,7 @@ footer .btnTop {
   right: 10%;
   margin-right: -100px;
 }
-footer .btnTop span {
-  text-indent: -99999px;
-}
-footer .btnTop::before, footer .btnTop::after {
+footer .btnTop .btnTop::before, footer .btnTop .btnTop::after {
   content: "";
   display: block;
   width: 2px;
@@ -548,13 +545,13 @@ footer .btnTop::before, footer .btnTop::after {
   transform-origin: center top;
   transition: 0.5s;
 }
-footer .btnTop::before {
+footer .btnTop .btnTop::before {
   transform: rotate(45deg);
 }
-footer .btnTop::after {
+footer .btnTop .btnTop::after {
   transform: rotate(-45deg);
 }
-footer .btnTop span {
+footer .btnTop .btnTop span {
   display: block;
   width: 2px;
   height: 40px;
@@ -564,7 +561,7 @@ footer .btnTop span {
   left: 50%;
   transition: 0.5s;
 }
-footer .btnTop h2 {
+footer .btnTop .btnTop h2 {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -579,19 +576,19 @@ footer .btnTop h2 {
   transition: 0.5s;
   opacity: 0;
 }
-footer .btnTop:hover::before {
+footer .btnTop .btnTop:hover::before {
   transform: rotate(45deg) translateY(-40px);
   opacity: 0;
 }
-footer .btnTop:hover::after {
+footer .btnTop .btnTop:hover::after {
   transform: rotate(-45deg) translateY(-40px);
   opacity: 0;
 }
-footer .btnTop:hover span {
+footer .btnTop .btnTop:hover span {
   transform: translateY(-40px);
   opacity: 0;
 }
-footer .btnTop:hover h2 {
+footer .btnTop .btnTop:hover h2 {
   top: 50%;
   opacity: 1;
 }
@@ -699,8 +696,8 @@ footer .btnTop:hover h2 {
   footer .inner h2 a {
     position: absolute;
     top: 30%;
-    left: 10%;
-    transform: translate(-10%, -50%);
+    left: 2%;
+    transform: translate(2%, -50%);
   }
   footer .inner h2 a img {
     width: 60%;
@@ -711,8 +708,8 @@ footer .btnTop:hover h2 {
     display: flex;
     gap: 20px;
     position: absolute;
-    top: 37%;
-    left: 7%;
+    top: 45%;
+    left: 5%;
   }
   footer .inner div ul li:nth-of-type(1) a {
     font-size: 3vw;
@@ -726,21 +723,21 @@ footer .btnTop:hover h2 {
   footer .inner div address {
     position: absolute;
     bottom: 30%;
-    left: 7%;
+    left: 5%;
     font-size: 3vw;
   }
   footer .inner div p {
     position: absolute;
     bottom: 22%;
-    left: 7%;
+    left: 5%;
     font-size: 3vw;
   }
   footer .inner select {
-    width: 90vw;
-    height: 7vh;
+    width: 50vw;
+    height: 6vh;
     font-size: 5vw;
     position: absolute;
-    top: -20%;
+    top: 25%;
     right: 5%;
     transform: translateY(-50%);
   }
@@ -3193,6 +3190,272 @@ footer .btnTop:hover h2 {
   }
   .goods .moreBtn a {
     margin-top: -40px;
+  }
+}
+#guard {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(../img_sub_company/gnb_guard.png);
+  margin-bottom: 100px;
+}
+
+.con1 {
+  width: 100%;
+  height: 350px;
+  padding: 0 200px;
+}
+.con1 h2 {
+  width: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 50px;
+}
+.con1 p {
+  width: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.con2 {
+  width: 100%;
+  height: 625px;
+  position: relative;
+  display: flex;
+  padding: 0 200px;
+  margin-bottom: 150px;
+}
+.con2 .letters {
+  width: 100%;
+  height: 100%;
+}
+.con2 .letters h2 {
+  width: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  color: #000;
+  margin: 50px 0px;
+}
+.con2 .letters p {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #000;
+}
+.con2 .slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.con2 .slide img {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.con3 {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.con3 article {
+  width: 100%;
+  padding: 0 200px;
+}
+.con3 article h2 {
+  width: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 50px;
+}
+.con3 article p {
+  width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 100px;
+}
+.con3 img {
+  width: 1400px;
+  height: 600px;
+  margin: 0 260px;
+}
+
+.con4 {
+  width: 100%;
+  height: 640px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.con4 h2 {
+  width: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+  margin: 50px 0px;
+}
+.con4 img {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 874px) {
+  #guard {
+    width: 100vh;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .con1 {
+    height: 25vh;
+    padding: 0 5%;
+  }
+  .con1 h2 {
+    font-size: 4vw;
+    margin-bottom: 3%;
+  }
+  .con1 p {
+    font-size: 2vw;
+  }
+  .con2 {
+    width: 122%;
+    height: 35vh;
+    padding: 0 5%;
+    margin-bottom: 7%;
+  }
+  .con2 .letters h2 {
+    font-size: 4vw;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .con2 .letters p {
+    font-size: 2vw;
+  }
+  .con2 .slide {
+    position: relative;
+  }
+  .con2 .slide img {
+    width: 55%;
+    height: 80%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+  }
+  .con3 {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin-bottom: 7%;
+  }
+  .con3 article {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .con3 article h2 {
+    width: 100%;
+    font-size: 4vw;
+    margin-bottom: 3%;
+  }
+  .con3 article p {
+    font-size: 2vw;
+    margin-bottom: 5%;
+  }
+  .con3 img {
+    width: 80vw;
+    height: 40vh;
+    margin: 0 9%;
+  }
+  .con4 h2 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  #guard {
+    width: 100vh;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 12%;
+  }
+  .con1 {
+    height: 15vh;
+  }
+  .con1 h2 {
+    font-size: 4vw;
+  }
+  .con1 p {
+    font-size: 2vw;
+  }
+  .con2 {
+    width: 122%;
+    height: 25vh;
+    padding: 0 5%;
+    margin-bottom: 0%;
+  }
+  .con2 .slide {
+    position: relative;
+  }
+  .con2 .slide img {
+    width: 60%;
+    height: 75%;
+    position: absolute;
+    top: 0%;
+    left: 1%;
+  }
+  .con3 {
+    height: 42vh;
+    position: relative;
+    margin-bottom: 7%;
+  }
+  .con3 article p {
+    font-size: 2vw;
+  }
+  .con3 img {
+    width: 80vw;
+    height: 25vh;
+  }
+  .con4 h2 {
+    margin: 0px;
+    margin-bottom: 7%;
+  }
+  .con4 img {
+    width: 80vw;
+    height: 40vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
