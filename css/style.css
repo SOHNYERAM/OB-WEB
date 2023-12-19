@@ -26,9 +26,7 @@ button {
   background: none;
 }
 
-html,
 body {
-  max-width: 100%;
   overflow-x: hidden;
   background-color: rgb(253, 252, 249);
 }
@@ -526,7 +524,7 @@ footer .sns ul a img {
   height: 50px;
   border-radius: 50%;
 }
-footer .btnTop .btnTop {
+footer .btnTop {
   display: block;
   width: 60px;
   height: 50px;
@@ -535,7 +533,7 @@ footer .btnTop .btnTop {
   right: 10%;
   margin-right: -100px;
 }
-footer .btnTop .btnTop::before, footer .btnTop .btnTop::after {
+footer .btnTop::before, footer .btnTop::after {
   content: "";
   display: block;
   width: 2px;
@@ -547,13 +545,13 @@ footer .btnTop .btnTop::before, footer .btnTop .btnTop::after {
   transform-origin: center top;
   transition: 0.5s;
 }
-footer .btnTop .btnTop::before {
+footer .btnTop::before {
   transform: rotate(45deg);
 }
-footer .btnTop .btnTop::after {
+footer .btnTop::after {
   transform: rotate(-45deg);
 }
-footer .btnTop .btnTop span {
+footer .btnTop span {
   display: block;
   width: 2px;
   height: 40px;
@@ -563,7 +561,7 @@ footer .btnTop .btnTop span {
   left: 50%;
   transition: 0.5s;
 }
-footer .btnTop .btnTop h2 {
+footer .btnTop h2 {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -578,19 +576,19 @@ footer .btnTop .btnTop h2 {
   transition: 0.5s;
   opacity: 0;
 }
-footer .btnTop .btnTop:hover::before {
+footer .btnTop:hover::before {
   transform: rotate(45deg) translateY(-40px);
   opacity: 0;
 }
-footer .btnTop .btnTop:hover::after {
+footer .btnTop:hover::after {
   transform: rotate(-45deg) translateY(-40px);
   opacity: 0;
 }
-footer .btnTop .btnTop:hover span {
+footer .btnTop:hover span {
   transform: translateY(-40px);
   opacity: 0;
 }
-footer .btnTop .btnTop:hover h2 {
+footer .btnTop:hover h2 {
   top: 50%;
   opacity: 1;
 }
