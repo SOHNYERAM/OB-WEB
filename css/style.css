@@ -27,8 +27,13 @@ button {
 }
 
 body {
-  overflow-x: hidden;
   background-color: rgb(253, 252, 249);
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header {
