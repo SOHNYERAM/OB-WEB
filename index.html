@@ -16,6 +16,12 @@
 			content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
 			name="viewport"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -97,32 +103,32 @@
 			</div>
 		</header>
 		<figure id="slide">
-			<div class="inner">
-				<div class="wrap">
+			<div class="inner mySwiper">
+				<div class="wrap swiper-wrapper">
 					<ul>
 						<!-- 카스슬라이드 -->
-						<li class="cass">
+						<li class="cass swiper-slide">
 							<img
 								src="./img_main/cass_slide/cass_slide.png"
 								alt="카스맥주의 슬라이드입니다."
 							/>
 						</li>
 						<!-- 오비라거 슬라이드 -->
-						<li class="ob">
+						<li class="ob swiper-slide">
 							<img
 								src="./img_main/ob_lager_slide/OB_slide.png"
 								alt="오비라거맥주의 슬라이드입니다."
 							/>
 						</li>
 						<!-- 핸드앤몰트 슬라이드  -->
-						<li class="hand">
+						<li class="hand swiper-slide">
 							<img
 								src="./img_main/hand_slide/hand_slide.png"
 								alt="핸드앤몰트맥주의 슬라이드입니다."
 							/>
 						</li>
 						<!-- 버드와이저 슬라이드 -->
-						<li class="bud">
+						<li class="bud swiper-slide">
 							<img
 								src="./img_main/bud_slide/bud_slide.png"
 								alt="버드와이저맥주의 슬라이드입니다."
@@ -130,14 +136,14 @@
 						</li>
 					</ul>
 				</div>
-				<nav class="button">
+				<div class="button swiper-pagination">
 					<ul>
 						<li><a href="카스페이지"></a></li>
 						<li><a href="오비라거페이지"></a></li>
 						<li><a href="핸드앤몰트페이지"></a></li>
 						<li><a href="버드와이저페이지" class="on"></a></li>
 					</ul>
-				</nav>
+				</div>
 			</div>
 		</figure>
 		<!-- 두번째 컨텐츠 영역 -->
